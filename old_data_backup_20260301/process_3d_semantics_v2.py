@@ -1,0 +1,448 @@
+"""
+处理KITTI360 3D语义数据 V2
+正确处理真实GPS坐标，转换为局部坐标系
+"""
+
+import os
+import sys
+import pickle
+import numpy as np
+from pathlib import Path
+from typing import List, Dict, Tuple
+import logging
+from tqdm import tqdm
+import json
+import struct
+
+logging.basicConfig(level=logging.INFO, format='%(message)s')
+logger = logging.getLogger(__name__)
+
+
+class SemanticDataProcessorV2:
+    """处理3D语义点云数据 - V2版本"""
+    
+    def __init__(self, data_path: str):
+        self.data_path = Path(data_path)
+        self.scenes = {}
+        
+        # KITTI360语义标签映射
+        self.semantic_labels = {
+            0: 'unlabeled', 1: 'ego vehicle', 2: 'rectification border',
+            3: 'out of roi', 4: 'static', 5: 'dynamic', 6: 'ground',
+            7: 'road', 8: 'sidewalk', 9: 'parking', 10: 'rail track',
+            11: 'building', 12: 'wall', 13: 'fence', 14: 'guard rail',
+            15: 'bridge', 16: 'tunnel', 17: 'pole', 18: 'polegroup',
+            19: 'traffic sign', 20: 'traffic light', 21: 'vegetation',
+            22: 'terrain', 23: 'sky', 24: 'person', 25: 'rider',
+            26: 'car', 27: 'truck', 28: 'bus', 29: 'caravan',
+            30: 'trailer', 31: 'train', 32: 'motorcycle', 33: 'bicycle',
+            34: 'garage', 35: 'gate', 36: 'stop', 37: 'smallpole',
+            38: 'lamp', 39: 'trash bin', 40: 'vending machine',
+            41: 'box', 42: 'unknown construction', 43: 'unknown vehicle',
+            44: 'unknown object', 45: 'license plate'
+        }
+    
+    def parse_ply_file_safe(self, ply_file: Path) -> np.ndarray:
+        """安全解析PLY文件，处理各种格式"""
+        try:
+            with open(ply_file, 'rb') as f:
+                # 读取头部
+                header_lines = []
+                while True:
+                    line = f.readline().decode('ascii', errors='ignore').strip()
+                    header_lines.append(line)
+                    if line == 'end_header':
+                        break
+                    if len(header_lines) > 100:  # 防止无限循环
+                        break
+                
+                # 解析头部信息
+                num_vertices = 0
+                properties = []
+                format_type = 'binary'
+                
+                for line in header_lines:
+                    if line.startswith('element vertex'):
+                        num_vertices = int(line.split()[-1])
+                    elif line.startswith('property'):
+                        parts = line.split()
+                        if len(parts) >= 3:
+                            properties.append(parts[2])  # 属性名
+                    elif line.startswith('format'):
+                        if 'ascii' in line:
+                            format_type = 'ascii'
+                
+                if num_vertices == 0:
+                    return np.array([])
+                
+                # 读取数据
+                if format_type == 'binary':
+                    # 尝试不同的数据格式
+                    try:
+                        # 标准格式: x,y,z,semantic,instance (float32, float32, float32, uint8, uint16)
+                        dtype = np.dtype([
+                            ('x', np.float32), ('y', np.float32), ('z', np.float32),
+                            ('semantic', np.uint8), ('instance', np.uint16)
+                        ])
+                        data = np.fromfile(f, dtype=dtype, count=num_vertices)
+                        
+                        points = np.column_stack([
+                            data['x'].astype(np.float64),
+                            data['y'].astype(np.float64),
+                            data['z'].astype(np.float64),
+                            data['semantic'].astype(np.int32)
+                        ])
+                    except:
+                        # 备用格式
+                        try:
+                            dtype = np.dtype([
+                                ('x', np.float32), ('y', np.float32), ('z', np.float32),
+                                ('semantic', np.uint8)
+                            ])
+                            data = np.fromfile(f, dtype=dtype, count=num_vertices)
+                            points = np.column_stack([
+                                data['x'].astype(np.float64),
+                                data['y'].astype(np.float64),
+                                data['z'].astype(np.float64),
+                                data['semantic'].astype(np.int32)
+                            ])
+                        except Exception as e:
+                            logger.warning(f"  无法解析二进制格式: {e}")
+                            return np.array([])
+                else:
+                    # ASCII格式
+                    points = []
+                    for _ in range(min(num_vertices, 100000)):  # 限制读取数量
+                        line = f.readline().decode('ascii', errors='ignore').strip()
+                        if not line:
+                            break
+                        values = line.split()
+                        if len(values) >= 4:
+                            try:
+                                points.append([
+                                    float(values[0]), float(values[1]),
+                                    float(values[2]), int(values[3])
+                                ])
+                            except:
+                                pass
+                    points = np.array(points)
+                
+                # 过滤无效值
+                if len(points) > 0:
+                    valid_mask = (
+                        np.isfinite(points[:, 0]) & 
+                        np.isfinite(points[:, 1]) & 
+                        np.isfinite(points[:, 2]) &
+                        (np.abs(points[:, 0]) < 1e6) &  # 限制坐标范围
+                        (np.abs(points[:, 1]) < 1e6) &
+                        (np.abs(points[:, 2]) < 1e6)
+                    )
+                    points = points[valid_mask]
+                
+                return points
+                
+        except Exception as e:
+            logger.warning(f"  解析失败 {ply_file.name}: {e}")
+            return np.array([])
+    
+    def extract_objects_from_points(self, points: np.ndarray, scene_center: np.ndarray = None) -> List[Dict]:
+        """从点云提取物体，转换为局部坐标"""
+        if len(points) == 0:
+            return []
+        
+        # 如果没有提供场景中心，计算一个
+        if scene_center is None:
+            scene_center = np.median(points[:, :3], axis=0)
+        
+        # 转换为局部坐标
+        local_points = points.copy()
+        local_points[:, :3] -= scene_center
+        
+        objects = []
+        unique_labels = np.unique(local_points[:, 3])
+        
+        for label_id in unique_labels:
+            if label_id == 0:  # 跳过未标记
+                continue
+            
+            mask = local_points[:, 3] == label_id
+            obj_points = local_points[mask]
+            original_points = points[mask]  # 原始坐标用于计算
+            
+            if len(obj_points) < 20:  # 过滤小物体
+                continue
+            
+            # 使用局部坐标计算
+            xyz = obj_points[:, :3]
+            center_local = np.mean(xyz, axis=0)
+            
+            # 使用原始坐标计算全局中心
+            center_global = np.mean(original_points[:, :3], axis=0)
+            
+            min_coords = np.min(xyz, axis=0)
+            max_coords = np.max(xyz, axis=0)
+            size = max_coords - min_coords
+            
+            # 过滤异常物体
+            if np.any(size > 50) or np.any(size < 0.01):
+                continue
+            
+            label_name = self.semantic_labels.get(int(label_id), f'unknown_{label_id}')
+            
+            objects.append({
+                'label': label_name,
+                'center_local': center_local.tolist(),  # 局部坐标
+                'center_global': center_global.tolist(),  # 全局坐标
+                'scene_center': scene_center.tolist(),  # 场景中心
+                'size': size.tolist(),
+                'num_points': len(obj_points),
+                'semantic_id': int(label_id)
+            })
+        
+        return objects
+    
+    def process_scene(self, scene_dir: Path) -> Tuple[List[Dict], np.ndarray]:
+        """处理一个场景，返回objects和场景中心"""
+        scene_name = scene_dir.name
+        logger.info(f"\n📁 处理场景: {scene_name}")
+        
+        # 查找所有PLY文件
+        ply_files = list(scene_dir.rglob("*.ply"))
+        logger.info(f"  找到 {len(ply_files)} 个PLY文件")
+        
+        if len(ply_files) == 0:
+            return [], np.array([0, 0, 0])
+        
+        # 首先采样一些点来确定场景中心
+        sample_points = []
+        for ply_file in ply_files[:5]:
+            points = self.parse_ply_file_safe(ply_file)
+            if len(points) > 0:
+                sample_points.append(points)
+        
+        if not sample_points:
+            return [], np.array([0, 0, 0])
+        
+        all_sample = np.vstack(sample_points)
+        scene_center = np.median(all_sample[:, :3], axis=0)
+        logger.info(f"  场景中心: ({scene_center[0]:.2f}, {scene_center[1]:.2f}, {scene_center[2]:.2f})")
+        
+        # 处理所有PLY文件
+        all_objects = []
+        for ply_file in tqdm(ply_files[:100], desc=f"  处理 {scene_name}"):  # 限制数量
+            points = self.parse_ply_file_safe(ply_file)
+            
+            if len(points) > 0:
+                objects = self.extract_objects_from_points(points, scene_center)
+                all_objects.extend(objects)
+        
+        logger.info(f"  ✅ 提取 {len(all_objects)} 个objects")
+        return all_objects, scene_center
+    
+    def process_all_scenes(self) -> Dict[str, Dict]:
+        """处理所有场景"""
+        train_dir = self.data_path / "train"
+        
+        if not train_dir.exists():
+            logger.error(f"训练目录不存在: {train_dir}")
+            return {}
+        
+        scene_dirs = [d for d in train_dir.iterdir() if d.is_dir() and "drive" in d.name]
+        logger.info(f"\n{'='*60}")
+        logger.info(f"发现 {len(scene_dirs)} 个场景")
+        logger.info(f"{'='*60}")
+        
+        scenes_data = {}
+        
+        for scene_dir in scene_dirs:
+            objects, scene_center = self.process_scene(scene_dir)
+            if objects:
+                scenes_data[scene_dir.name] = {
+                    'objects': objects,
+                    'scene_center': scene_center.tolist()
+                }
+        
+        return scenes_data
+    
+    def create_cells(self, scenes_data: Dict[str, Dict], cell_size: float = 10.0) -> List[Dict]:
+        """创建cells - 使用局部坐标"""
+        logger.info(f"\n{'='*60}")
+        logger.info("创建Cells (使用局部坐标)")
+        logger.info(f"{'='*60}")
+        
+        cells = []
+        cell_id = 0
+        
+        for scene_name, scene_info in scenes_data.items():
+            objects = scene_info['objects']
+            scene_center = np.array(scene_info['scene_center'])
+            
+            if not objects:
+                continue
+            
+            # 使用局部坐标
+            centers = np.array([obj['center_local'] for obj in objects])
+            
+            min_coords = np.min(centers, axis=0)
+            max_coords = np.max(centers, axis=0)
+            
+            logger.info(f"\n📍 {scene_name}:")
+            logger.info(f"  Objects: {len(objects)}")
+            logger.info(f"  局部范围: X[{min_coords[0]:.1f}, {max_coords[0]:.1f}], "
+                       f"Y[{min_coords[1]:.1f}, {max_coords[1]:.1f}]")
+            
+            # 创建grid
+            num_x = min(50, max(1, int((max_coords[0] - min_coords[0]) / cell_size) + 1))
+            num_y = min(50, max(1, int((max_coords[1] - min_coords[1]) / cell_size) + 1))
+            
+            x_starts = np.linspace(min_coords[0], max_coords[0] - cell_size, num_x)
+            y_starts = np.linspace(min_coords[1], max_coords[1] - cell_size, num_y)
+            
+            scene_cells = 0
+            for x in x_starts:
+                for y in y_starts:
+                    cell_objects = []
+                    for obj in objects:
+                        cx, cy = obj['center_local'][0], obj['center_local'][1]
+                        if x <= cx < x + cell_size and y <= cy < y + cell_size:
+                            cell_objects.append(obj)
+                    
+                    if cell_objects:
+                        cell_centers_local = np.array([obj['center_local'] for obj in cell_objects])
+                        cell_center_local = np.mean(cell_centers_local, axis=0)
+                        
+                        # 计算全局cell中心
+                        cell_center_global = cell_center_local + scene_center
+                        
+                        cells.append({
+                            'id': f"{scene_name}_{cell_id:04d}",
+                            'scene': scene_name,
+                            'center_local': cell_center_local.tolist(),
+                            'center': cell_center_global.tolist(),  # 全局坐标用于训练
+                            'objects': cell_objects,
+                            'scene_center': scene_center.tolist(),
+                            'bbox': [float(x), float(y), float(x + cell_size), float(y + cell_size)]
+                        })
+                        cell_id += 1
+                        scene_cells += 1
+            
+            logger.info(f"  ✅ 创建了 {scene_cells} 个cells")
+        
+        logger.info(f"\n{'='*60}")
+        logger.info(f"总计: {len(cells)} 个cells")
+        logger.info(f"{'='*60}")
+        
+        return cells
+    
+    def create_poses(self, cells: List[Dict], poses_per_cell: int = 10) -> List[Dict]:
+        """创建poses"""
+        logger.info(f"\n{'='*60}")
+        logger.info("创建Poses")
+        logger.info(f"{'='*60}")
+        
+        poses = []
+        
+        for cell in tqdm(cells, desc="创建poses"):
+            objects = cell.get('objects', [])
+            if not objects:
+                continue
+            
+            cell_center = cell['center']  # 使用全局坐标
+            
+            for i in range(min(poses_per_cell, len(objects))):
+                ref_obj = objects[i % len(objects)]
+                descriptions = self._generate_descriptions(ref_obj)
+                
+                for desc in descriptions:
+                    # 在cell内随机生成位置（局部偏移）
+                    offset = np.random.randn(2) * 3.0  # 3米标准差
+                    location = [
+                        cell_center[0] + offset[0],
+                        cell_center[1] + offset[1],
+                        cell_center[2] if len(cell_center) > 2 else 0
+                    ]
+                    
+                    poses.append({
+                        'cell_id': cell['id'],
+                        'description': desc,
+                        'location': location,
+                        'reference_object': ref_obj['label'],
+                        'scene': cell['scene']
+                    })
+        
+        logger.info(f"✅ 创建了 {len(poses)} 个poses")
+        return poses
+    
+    def _generate_descriptions(self, obj: Dict) -> List[str]:
+        """生成描述"""
+        label = obj['label']
+        
+        templates = [
+            f"Near the {label}",
+            f"Close to a {label}",
+            f"By the {label}",
+            f"Next to the {label}",
+            f"In front of the {label}",
+            f"Behind the {label}",
+        ]
+        
+        return templates[:3]
+    
+    def save_data(self, cells: List[Dict], poses: List[Dict], output_path: str):
+        """保存数据"""
+        output_path = Path(output_path)
+        output_path.mkdir(parents=True, exist_ok=True)
+        
+        cells_dir = output_path / "cells"
+        cells_dir.mkdir(exist_ok=True)
+        with open(cells_dir / "cells.pkl", 'wb') as f:
+            pickle.dump(cells, f)
+        
+        poses_dir = output_path / "poses"
+        poses_dir.mkdir(exist_ok=True)
+        with open(poses_dir / "poses.pkl", 'wb') as f:
+            pickle.dump(poses, f)
+        
+        stats = {
+            'num_cells': len(cells),
+            'num_poses': len(poses),
+            'num_scenes': len(set(c['scene'] for c in cells)),
+            'total_objects': sum(len(c['objects']) for c in cells)
+        }
+        
+        with open(output_path / "stats.json", 'w') as f:
+            json.dump(stats, f, indent=2)
+        
+        logger.info(f"\n{'='*60}")
+        logger.info("数据保存完成")
+        logger.info(f"{'='*60}")
+        logger.info(f"📁 输出: {output_path}")
+        logger.info(f"📊 Cells: {stats['num_cells']}, Poses: {stats['num_poses']}")
+
+
+def main():
+    data_path = "/Users/yaoyingliang/Downloads/data_3d_semantics"
+    output_path = "/Users/yaoyingliang/Desktop/Text2Loc-main/data/k360_from_semantics_v2"
+    
+    logger.info("\n" + "="*60)
+    logger.info("处理KITTI360 3D语义数据 V2")
+    logger.info("="*60)
+    
+    processor = SemanticDataProcessorV2(data_path)
+    
+    scenes_data = processor.process_all_scenes()
+    
+    if not scenes_data:
+        logger.error("没有处理到数据")
+        return
+    
+    cells = processor.create_cells(scenes_data, cell_size=10.0)
+    poses = processor.create_poses(cells, poses_per_cell=10)
+    
+    processor.save_data(cells, poses, output_path)
+    
+    logger.info("\n✅ 处理完成！")
+
+
+if __name__ == "__main__":
+    main()

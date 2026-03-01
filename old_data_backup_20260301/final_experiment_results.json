@@ -1,0 +1,6 @@
+{
+  "health": true,
+  "config": true,
+  "data": true,
+  "queries": true
+}

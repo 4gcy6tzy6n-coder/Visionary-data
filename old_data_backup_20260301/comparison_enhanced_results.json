@@ -1,0 +1,25 @@
+{
+  "visionary_enhanced": {
+    "mean_error_m": 13.56347117902965,
+    "median_error_m": 13.487783063775911,
+    "rmse_m": 14.432921289191802,
+    "accuracy_5m": 0.2,
+    "accuracy_10m": 30.4,
+    "accuracy_15m": 58.4
+  },
+  "text2loc_one": {
+    "mean_error_m": 13.569593972764123,
+    "median_error_m": 13.477901105115102,
+    "rmse_m": 14.439250947566569,
+    "accuracy_5m": 0.0,
+    "accuracy_10m": 30.2,
+    "accuracy_15m": 58.699999999999996
+  },
+  "improvements": {
+    "mean_error_reduction": 0.04512142181086947,
+    "median_error_reduction": -0.07331971487058213,
+    "rmse_reduction": 0.043836473219782277,
+    "accuracy_5m_improvement": 0.2,
+    "accuracy_10m_improvement": 0.1999999999999993
+  }
+}

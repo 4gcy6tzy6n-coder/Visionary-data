@@ -1,0 +1,67 @@
+{
+  "accuracy": {
+    "visionary": {
+      "mean_error_m": 6.047567836835929,
+      "median_error_m": 6.041137436927795,
+      "std_error_m": 2.2951217835034243,
+      "rmse_m": 6.468435726065795,
+      "max_error_m": 10.02736135701028,
+      "min_error_m": 1.9873924557447873,
+      "accuracy_1m": 0.0,
+      "accuracy_2m": 0.05,
+      "accuracy_5m": 36.0
+    },
+    "text2loc_one": {
+      "mean_error_m": 6.047970921992724,
+      "median_error_m": 6.0411921007162475,
+      "std_error_m": 2.2948010974125896,
+      "rmse_m": 6.468698814286808,
+      "max_error_m": 9.998768785572054,
+      "min_error_m": 2.0113327610547653,
+      "accuracy_1m": 0.0,
+      "accuracy_2m": 0.0,
+      "accuracy_5m": 36.05
+    }
+  },
+  "improvements": {
+    "mean_error_reduction": 0.00666479984764988,
+    "median_error_reduction": 0.0009048510217995185,
+    "rmse_reduction": 0.004067096468166321,
+    "accuracy_1m_improvement": 0.0,
+    "accuracy_2m_improvement": 0.05
+  },
+  "error_distribution": {
+    "visionary": {
+      "percentile_25": 4.115325185260027,
+      "percentile_50": 6.041137436927795,
+      "percentile_75": 8.050169747625336,
+      "percentile_90": 9.220425780797793,
+      "percentile_95": 9.598559216232067,
+      "percentile_99": 9.912284044704085
+    },
+    "text2loc_one": {
+      "percentile_25": 4.106266599121802,
+      "percentile_50": 6.0411921007162475,
+      "percentile_75": 8.048127132333043,
+      "percentile_90": 9.221567428304885,
+      "percentile_95": 9.610004184474246,
+      "percentile_99": 9.917940054881539
+    }
+  },
+  "efficiency": {
+    "visionary": {
+      "mean_time_ms": 0.7976145797147183,
+      "median_time_ms": 0.766332999774022,
+      "std_time_ms": 0.09564303501751234,
+      "min_time_ms": 0.6901659980940167,
+      "max_time_ms": 1.4281670009950176
+    },
+    "text2loc_one": {
+      "mean_time_ms": 0.00045254011638462543,
+      "median_time_ms": 0.0003545010258676484,
+      "std_time_ms": 0.0007172298558459651,
+      "min_time_ms": 0.0002080014382954687,
+      "max_time_ms": 0.007499998901039362
+    }
+  }
+}

@@ -1,0 +1,3943 @@
+{
+  "timestamp": "2026-02-08T14:30:40.961115",
+  "server_info": {
+    "adapter_available": true,
+    "query_count": 0,
+    "status": "running",
+    "timestamp": "2026-02-08T14:30:41.016017"
+  },
+  "test_results": [
+    {
+      "query": "找到红色的汽车",
+      "status": "success",
+      "total_time_ms": 8.14,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 7.86,
+        "y": 3.16,
+        "cell_id": "2013_05_28_drive_0002_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 5.62,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.23,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:41.024481"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0002_sync_0",
+          "confidence": 0.45168359209742953,
+          "description": "red色car的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.45168359209742953,
+          "x": 7.86,
+          "y": 3.16
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "red"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "car"
+          ]
+        },
+        "processing_time_ms": 5.850076675415039,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "red",
+          "confidence": 0.8,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "car",
+          "original_query": "找到红色的汽车",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.23,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143041_1",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.45168359209742953,
+            "description": "red色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.45168359209742953,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.4500235991468212,
+            "description": "red色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4500235991468212,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.44940697337036883,
+            "description": "red色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.44940697337036883,
+            "x": 7.11,
+            "y": 1.6
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.45168359209742953,
+            "description": "red色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.45168359209742953,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.4500235991468212,
+            "description": "red色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4500235991468212,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.44940697337036883,
+            "description": "red色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.44940697337036883,
+            "x": 7.11,
+            "y": 1.6
+          }
+        ],
+        "session_id": "sess_1770532241019",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "在建筑物左侧的树",
+      "status": "success",
+      "total_time_ms": 6.16,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -10.15,
+        "y": -14.21,
+        "cell_id": "2013_05_28_drive_0010_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 1.11,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.29,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:41.531802"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0010_sync_0",
+          "confidence": 0.6132689991560557,
+          "description": "none色building的west侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6132689991560557,
+          "x": -10.15,
+          "y": -14.21
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "none"
+          ],
+          "directions": [
+            "west"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 1.5571117401123047,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "none",
+          "confidence": 0.8,
+          "direction": "west",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": "在建筑物左侧的树",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.29,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143041_2",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6132689991560557,
+            "description": "none色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6132689991560557,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6130218116791044,
+            "description": "none色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6130218116791044,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.6099900345942912,
+            "description": "none色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6099900345942912,
+            "x": 7.28,
+            "y": 1.94
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6132689991560557,
+            "description": "none色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6132689991560557,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6130218116791044,
+            "description": "none色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6130218116791044,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.6099900345942912,
+            "description": "none色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6099900345942912,
+            "x": 7.28,
+            "y": 1.94
+          }
+        ],
+        "session_id": "sess_1770532241530",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "蓝色的标志牌",
+      "status": "success",
+      "total_time_ms": 5.94,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 7.28,
+        "y": 1.94,
+        "cell_id": "2013_05_28_drive_0007_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 3.61,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.17,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:42.040067"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0007_sync_0",
+          "confidence": 0.4506352494877165,
+          "description": "blue色sign的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.4506352494877165,
+          "x": 7.28,
+          "y": 1.94
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "blue"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "sign"
+          ]
+        },
+        "processing_time_ms": 3.7949085235595703,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "blue",
+          "confidence": 0.8,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "sign",
+          "original_query": "蓝色的标志牌",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.17,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143042_3",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.4506352494877165,
+            "description": "blue色sign的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.4506352494877165,
+            "x": 7.28,
+            "y": 1.94
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.4501146838033918,
+            "description": "blue色sign的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4501146838033918,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.4291837043559108,
+            "description": "blue色sign的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.4291837043559108,
+            "x": -11.78,
+            "y": -2.35
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.4506352494877165,
+            "description": "blue色sign的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.4506352494877165,
+            "x": 7.28,
+            "y": 1.94
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.4501146838033918,
+            "description": "blue色sign的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4501146838033918,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.4291837043559108,
+            "description": "blue色sign的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.4291837043559108,
+            "x": -11.78,
+            "y": -2.35
+          }
+        ],
+        "session_id": "sess_1770532242036",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "白色的建筑物",
+      "status": "success",
+      "total_time_ms": 12.15,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 9.93,
+        "y": -3.63,
+        "cell_id": "2013_05_28_drive_0005_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 8.61,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.37,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:42.556818"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0005_sync_0",
+          "confidence": 0.44796590481853965,
+          "description": "white色building的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.44796590481853965,
+          "x": 9.93,
+          "y": -3.63
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "white"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 8.838176727294922,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "white",
+          "confidence": 0.8,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": "白色的建筑物",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.37,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143042_4",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.44796590481853965,
+            "description": "white色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.44796590481853965,
+            "x": 9.93,
+            "y": -3.63
+          },
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.4418338750288672,
+            "description": "white色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4418338750288672,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.4390660667163217,
+            "description": "white色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.4390660667163217,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.44796590481853965,
+            "description": "white色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.44796590481853965,
+            "x": 9.93,
+            "y": -3.63
+          },
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.4418338750288672,
+            "description": "white色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4418338750288672,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.4390660667163217,
+            "description": "white色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.4390660667163217,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "session_id": "sess_1770532242548",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "绿色的草坪",
+      "status": "success",
+      "total_time_ms": 16.33,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -10.15,
+        "y": -14.21,
+        "cell_id": "2013_05_28_drive_0010_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 11.38,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.24,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:43.073543"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0010_sync_0",
+          "confidence": 0.11842030756636333,
+          "description": "green色none的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.11842030756636333,
+          "x": -10.15,
+          "y": -14.21
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "green"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "none"
+          ]
+        },
+        "processing_time_ms": 11.717796325683594,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "green",
+          "confidence": 0.7,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "none",
+          "original_query": "绿色的草坪",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.24,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143043_5",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.11842030756636333,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.11842030756636333,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.11616477218830736,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.11616477218830736,
+            "x": -9.41,
+            "y": 14.33
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.11570746524702144,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.11570746524702144,
+            "x": 7.11,
+            "y": 1.6
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.11842030756636333,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.11842030756636333,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.11616477218830736,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.11616477218830736,
+            "x": -9.41,
+            "y": 14.33
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.11570746524702144,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.11570746524702144,
+            "x": 7.11,
+            "y": 1.6
+          }
+        ],
+        "session_id": "sess_1770532243062",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "黄色的交通灯",
+      "status": "success",
+      "total_time_ms": 11.86,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -11.78,
+        "y": -2.35,
+        "cell_id": "2013_05_28_drive_0004_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 6.29,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.21,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:43.590201"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0004_sync_0",
+          "confidence": 0.44917396528567155,
+          "description": "yellow色light的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.44917396528567155,
+          "x": -11.78,
+          "y": -2.35
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "yellow"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "light"
+          ]
+        },
+        "processing_time_ms": 6.515026092529297,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "yellow",
+          "confidence": 0.8,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "light",
+          "original_query": "黄色的交通灯",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.21,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143043_6",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.44917396528567155,
+            "description": "yellow色light的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.44917396528567155,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.4466939536078692,
+            "description": "yellow色light的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4466939536078692,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.44613083809685655,
+            "description": "yellow色light的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.44613083809685655,
+            "x": 7.28,
+            "y": 1.94
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.44917396528567155,
+            "description": "yellow色light的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.44917396528567155,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.4466939536078692,
+            "description": "yellow色light的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4466939536078692,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.44613083809685655,
+            "description": "yellow色light的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.44613083809685655,
+            "x": 7.28,
+            "y": 1.94
+          }
+        ],
+        "session_id": "sess_1770532243583",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "道路右边的停车场",
+      "status": "success",
+      "total_time_ms": 7.47,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -10.15,
+        "y": -14.21,
+        "cell_id": "2013_05_28_drive_0010_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 2.83,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 1.1,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:44.099289"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0010_sync_0",
+          "confidence": 0.6094429006829223,
+          "description": "none色car的east侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6094429006829223,
+          "x": -10.15,
+          "y": -14.21
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "none"
+          ],
+          "directions": [
+            "east"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "car"
+          ]
+        },
+        "processing_time_ms": 3.381967544555664,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "none",
+          "confidence": 0.8,
+          "direction": "east",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "car",
+          "original_query": "道路右边的停车场",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 1.1,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143044_7",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6094429006829223,
+            "description": "none色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6094429006829223,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6072420115015036,
+            "description": "none色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6072420115015036,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.6027758156772612,
+            "description": "none色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6027758156772612,
+            "x": 9.93,
+            "y": -3.63
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6094429006829223,
+            "description": "none色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6094429006829223,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6072420115015036,
+            "description": "none色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6072420115015036,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.6027758156772612,
+            "description": "none色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6027758156772612,
+            "x": 9.93,
+            "y": -3.63
+          }
+        ],
+        "session_id": "sess_1770532244096",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "前方的入口",
+      "status": "success",
+      "total_time_ms": 6.63,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 9.5,
+        "y": -6.3,
+        "cell_id": "2013_05_28_drive_0006_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 1.15,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.34,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:44.611249"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0006_sync_0",
+          "confidence": 0.1673832012145555,
+          "description": "none色none的front侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.1673832012145555,
+          "x": 9.5,
+          "y": -6.3
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "none"
+          ],
+          "directions": [
+            "front"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "none"
+          ]
+        },
+        "processing_time_ms": 1.6472339630126953,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "none",
+          "confidence": 0.7,
+          "direction": "front",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "none",
+          "original_query": "前方的入口",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.34,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143044_8",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.1673832012145555,
+            "description": "none色none的front侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.1673832012145555,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.16737843647211148,
+            "description": "none色none的front侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.16737843647211148,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.1667224496172436,
+            "description": "none色none的front侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.1667224496172436,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.1673832012145555,
+            "description": "none色none的front侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.1673832012145555,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.16737843647211148,
+            "description": "none色none的front侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.16737843647211148,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.1667224496172436,
+            "description": "none色none的front侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.1667224496172436,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "session_id": "sess_1770532244610",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "后面的灰色建筑",
+      "status": "success",
+      "total_time_ms": 12.38,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -10.15,
+        "y": -14.21,
+        "cell_id": "2013_05_28_drive_0010_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 8.18,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.2,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:45.126808"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0010_sync_0",
+          "confidence": 0.6465314272907938,
+          "description": "gray色building的back侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6465314272907938,
+          "x": -10.15,
+          "y": -14.21
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "gray"
+          ],
+          "directions": [
+            "back"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 8.539915084838867,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "gray",
+          "confidence": 0.9,
+          "direction": "back",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": "后面的灰色建筑",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.2,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143045_9",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6465314272907938,
+            "description": "gray色building的back侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6465314272907938,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6441588921697255,
+            "description": "gray色building的back侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6441588921697255,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.6352246223626875,
+            "description": "gray色building的back侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6352246223626875,
+            "x": -9.41,
+            "y": 14.33
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6465314272907938,
+            "description": "gray色building的back侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6465314272907938,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6441588921697255,
+            "description": "gray色building的back侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6441588921697255,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.6352246223626875,
+            "description": "gray色building的back侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6352246223626875,
+            "x": -9.41,
+            "y": 14.33
+          }
+        ],
+        "session_id": "sess_1770532245118",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "北侧的蓝色汽车",
+      "status": "success",
+      "total_time_ms": 11.21,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -11.78,
+        "y": -2.35,
+        "cell_id": "2013_05_28_drive_0004_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 7.67,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.19,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:45.641425"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0004_sync_0",
+          "confidence": 0.6451670127842056,
+          "description": "blue色car的north侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6451670127842056,
+          "x": -11.78,
+          "y": -2.35
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "blue"
+          ],
+          "directions": [
+            "north"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "car"
+          ]
+        },
+        "processing_time_ms": 7.867097854614258,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "blue",
+          "confidence": 0.9,
+          "direction": "north",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "car",
+          "original_query": "北侧的蓝色汽车",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.19,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143045_10",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6451670127842056,
+            "description": "blue色car的north侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6451670127842056,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.642430589812772,
+            "description": "blue色car的north侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.642430589812772,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6408897791218524,
+            "description": "blue色car的north侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6408897791218524,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6451670127842056,
+            "description": "blue色car的north侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6451670127842056,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.642430589812772,
+            "description": "blue色car的north侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.642430589812772,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6408897791218524,
+            "description": "blue色car的north侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6408897791218524,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "session_id": "sess_1770532245633",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "东边的红色卡车",
+      "status": "success",
+      "total_time_ms": 12.24,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 9.93,
+        "y": -3.63,
+        "cell_id": "2013_05_28_drive_0005_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 8.0,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.21,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:46.156716"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0005_sync_0",
+          "confidence": 0.6469918463235008,
+          "description": "red色car的east侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6469918463235008,
+          "x": 9.93,
+          "y": -3.63
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "red"
+          ],
+          "directions": [
+            "east"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "car"
+          ]
+        },
+        "processing_time_ms": 8.195161819458008,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "red",
+          "confidence": 0.9,
+          "direction": "east",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "car",
+          "original_query": "东边的红色卡车",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.21,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143046_11",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.6469918463235008,
+            "description": "red色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6469918463235008,
+            "x": 9.93,
+            "y": -3.63
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6451783088816831,
+            "description": "red色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6451783088816831,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6391654018658838,
+            "description": "red色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6391654018658838,
+            "x": 12.63,
+            "y": -13.07
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.6469918463235008,
+            "description": "red色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6469918463235008,
+            "x": 9.93,
+            "y": -3.63
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6451783088816831,
+            "description": "red色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6451783088816831,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6391654018658838,
+            "description": "red色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6391654018658838,
+            "x": 12.63,
+            "y": -13.07
+          }
+        ],
+        "session_id": "sess_1770532246148",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "在红色建筑物左侧的树",
+      "status": "success",
+      "total_time_ms": 12.08,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 7.28,
+        "y": 1.94,
+        "cell_id": "2013_05_28_drive_0007_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 7.13,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.23,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:46.670167"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0007_sync_0",
+          "confidence": 0.6486214045744864,
+          "description": "red色building的west侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6486214045744864,
+          "x": 7.28,
+          "y": 1.94
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "red"
+          ],
+          "directions": [
+            "west"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 7.457971572875977,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "red",
+          "confidence": 0.9,
+          "direction": "west",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": "在红色建筑物左侧的树",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.23,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143046_12",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.6486214045744864,
+            "description": "red色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6486214045744864,
+            "x": 7.28,
+            "y": 1.94
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.6376391410935125,
+            "description": "red色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6376391410935125,
+            "x": -9.41,
+            "y": 14.33
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.632236200344392,
+            "description": "red色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.632236200344392,
+            "x": -11.78,
+            "y": -2.35
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.6486214045744864,
+            "description": "red色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6486214045744864,
+            "x": 7.28,
+            "y": 1.94
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.6376391410935125,
+            "description": "red色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6376391410935125,
+            "x": -9.41,
+            "y": 14.33
+          },
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.632236200344392,
+            "description": "red色building的west侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.632236200344392,
+            "x": -11.78,
+            "y": -2.35
+          }
+        ],
+        "session_id": "sess_1770532246663",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "找到停车场入口附近的蓝色标志",
+      "status": "success",
+      "total_time_ms": 5.52,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -11.78,
+        "y": -2.35,
+        "cell_id": "2013_05_28_drive_0004_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 3.56,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.09,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:47.181207"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0004_sync_0",
+          "confidence": 0.43267429255900214,
+          "description": "blue色car的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.43267429255900214,
+          "x": -11.78,
+          "y": -2.35
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "blue"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "close"
+          ],
+          "landmarks": [],
+          "objects": [
+            "car"
+          ]
+        },
+        "processing_time_ms": 3.7457942962646484,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "blue",
+          "confidence": 0.8,
+          "direction": "none",
+          "distance": "close",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "car",
+          "original_query": "找到停车场入口附近的蓝色标志",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.09,
+          "real_model_used": true,
+          "relation": "near",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143047_13",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.43267429255900214,
+            "description": "blue色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.43267429255900214,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.4272836489983546,
+            "description": "blue色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4272836489983546,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.42692904425021194,
+            "description": "blue色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.42692904425021194,
+            "x": 12.63,
+            "y": -13.07
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.43267429255900214,
+            "description": "blue色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.43267429255900214,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.4272836489983546,
+            "description": "blue色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4272836489983546,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.42692904425021194,
+            "description": "blue色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.42692904425021194,
+            "x": 12.63,
+            "y": -13.07
+          }
+        ],
+        "session_id": "sess_1770532247177",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "在白色汽车旁边的人行道",
+      "status": "success",
+      "total_time_ms": 13.93,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -11.78,
+        "y": -2.35,
+        "cell_id": "2013_05_28_drive_0004_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 9.07,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.26,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:47.700187"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0004_sync_0",
+          "confidence": 0.451839612322358,
+          "description": "white色car的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.451839612322358,
+          "x": -11.78,
+          "y": -2.35
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "white"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "car"
+          ]
+        },
+        "processing_time_ms": 9.284734725952148,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "white",
+          "confidence": 0.8,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "car",
+          "original_query": "在白色汽车旁边的人行道",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.26,
+          "real_model_used": true,
+          "relation": "near",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143047_14",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.451839612322358,
+            "description": "white色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.451839612322358,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.44586314426160445,
+            "description": "white色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.44586314426160445,
+            "x": 9.93,
+            "y": -3.63
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.4407683035706415,
+            "description": "white色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.4407683035706415,
+            "x": 7.11,
+            "y": 1.6
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.451839612322358,
+            "description": "white色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.451839612322358,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.44586314426160445,
+            "description": "white色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.44586314426160445,
+            "x": 9.93,
+            "y": -3.63
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.4407683035706415,
+            "description": "white色car的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.4407683035706415,
+            "x": 7.11,
+            "y": 1.6
+          }
+        ],
+        "session_id": "sess_1770532247691",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "在黄色交通灯右侧的建筑物",
+      "status": "success",
+      "total_time_ms": 12.59,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 12.63,
+        "y": -13.07,
+        "cell_id": "2013_05_28_drive_0000_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 8.17,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.24,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:48.218032"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0000_sync_0",
+          "confidence": 0.6448442825456104,
+          "description": "yellow色building的east侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6448442825456104,
+          "x": 12.63,
+          "y": -13.07
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "yellow"
+          ],
+          "directions": [
+            "east"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 8.785009384155273,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "yellow",
+          "confidence": 0.9,
+          "direction": "east",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": "在黄色交通灯右侧的建筑物",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.24,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143048_15",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6448442825456104,
+            "description": "yellow色building的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6448442825456104,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.6440220764681254,
+            "description": "yellow色building的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6440220764681254,
+            "x": 7.11,
+            "y": 1.6
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6397218261654752,
+            "description": "yellow色building的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6397218261654752,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6448442825456104,
+            "description": "yellow色building的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6448442825456104,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.6440220764681254,
+            "description": "yellow色building的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6440220764681254,
+            "x": 7.11,
+            "y": 1.6
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6397218261654752,
+            "description": "yellow色building的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6397218261654752,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "session_id": "sess_1770532248209",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "距离入口10米的绿色草坪",
+      "status": "success",
+      "total_time_ms": 12.99,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 9.5,
+        "y": -6.3,
+        "cell_id": "2013_05_28_drive_0006_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 8.87,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.24,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:48.732427"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0006_sync_0",
+          "confidence": 0.11847764857323438,
+          "description": "green色none的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.11847764857323438,
+          "x": 9.5,
+          "y": -6.3
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "green"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "none"
+          ]
+        },
+        "processing_time_ms": 9.207010269165039,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "green",
+          "confidence": 0.7,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "none",
+          "original_query": "距离入口10米的绿色草坪",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.24,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143048_16",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.11847764857323438,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.11847764857323438,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.1183241370701818,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.1183241370701818,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.11576378531769407,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.11576378531769407,
+            "x": 7.28,
+            "y": 1.94
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.11847764857323438,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.11847764857323438,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.1183241370701818,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.1183241370701818,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.11576378531769407,
+            "description": "green色none的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.11576378531769407,
+            "x": 7.28,
+            "y": 1.94
+          }
+        ],
+        "session_id": "sess_1770532248723",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "在建筑物前面的红色汽车旁边",
+      "status": "success",
+      "total_time_ms": 12.03,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -11.78,
+        "y": -2.35,
+        "cell_id": "2013_05_28_drive_0004_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 7.75,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.23,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:49.247300"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0004_sync_0",
+          "confidence": 0.6514464659232481,
+          "description": "red色building的front侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6514464659232481,
+          "x": -11.78,
+          "y": -2.35
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "red"
+          ],
+          "directions": [
+            "front"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 8.074045181274414,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "red",
+          "confidence": 0.9,
+          "direction": "front",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": "在建筑物前面的红色汽车旁边",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.23,
+          "real_model_used": true,
+          "relation": "near",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143049_17",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6514464659232481,
+            "description": "red色building的front侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6514464659232481,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.650297822288792,
+            "description": "red色building的front侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.650297822288792,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6470119098138566,
+            "description": "red色building的front侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6470119098138566,
+            "x": 12.63,
+            "y": -13.07
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.6514464659232481,
+            "description": "red色building的front侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6514464659232481,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.650297822288792,
+            "description": "red色building的front侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.650297822288792,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6470119098138566,
+            "description": "red色building的front侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6470119098138566,
+            "x": 12.63,
+            "y": -13.07
+          }
+        ],
+        "session_id": "sess_1770532249239",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "蓝色的椅子在停车场东边",
+      "status": "success",
+      "total_time_ms": 13.13,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 9.5,
+        "y": -6.3,
+        "cell_id": "2013_05_28_drive_0006_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 9.14,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.49,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:49.761395"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0006_sync_0",
+          "confidence": 0.6521172697041077,
+          "description": "blue色car的east侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6521172697041077,
+          "x": 9.5,
+          "y": -6.3
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "blue"
+          ],
+          "directions": [
+            "east"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "car"
+          ]
+        },
+        "processing_time_ms": 9.490013122558594,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "blue",
+          "confidence": 0.9,
+          "direction": "east",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "car",
+          "original_query": "蓝色的椅子在停车场东边",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.49,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143049_18",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.6521172697041077,
+            "description": "blue色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6521172697041077,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6432428509278455,
+            "description": "blue色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6432428509278455,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.6426687476032934,
+            "description": "blue色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6426687476032934,
+            "x": -9.41,
+            "y": 14.33
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.6521172697041077,
+            "description": "blue色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6521172697041077,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6432428509278455,
+            "description": "blue色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6432428509278455,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.6426687476032934,
+            "description": "blue色car的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6426687476032934,
+            "x": -9.41,
+            "y": 14.33
+          }
+        ],
+        "session_id": "sess_1770532249752",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "灰色的房子在道路南侧",
+      "status": "success",
+      "total_time_ms": 5.75,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 7.28,
+        "y": 1.94,
+        "cell_id": "2013_05_28_drive_0007_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 3.6,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.1,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:50.270908"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0007_sync_0",
+          "confidence": 0.6502516327854592,
+          "description": "gray色building的south侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6502516327854592,
+          "x": 7.28,
+          "y": 1.94
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "gray"
+          ],
+          "directions": [
+            "south"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 3.7450790405273438,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "gray",
+          "confidence": 0.9,
+          "direction": "south",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": "灰色的房子在道路南侧",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.1,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143050_19",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.6502516327854592,
+            "description": "gray色building的south侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6502516327854592,
+            "x": 7.28,
+            "y": 1.94
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6425215849938071,
+            "description": "gray色building的south侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6425215849938071,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6397799315900657,
+            "description": "gray色building的south侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6397799315900657,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.6502516327854592,
+            "description": "gray色building的south侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6502516327854592,
+            "x": 7.28,
+            "y": 1.94
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.6425215849938071,
+            "description": "gray色building的south侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6425215849938071,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.6397799315900657,
+            "description": "gray色building的south侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.6397799315900657,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "session_id": "sess_1770532250267",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "在大树北面的小车",
+      "status": "success",
+      "total_time_ms": 8.09,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 7.11,
+        "y": 1.6,
+        "cell_id": "2013_05_28_drive_0009_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 1.82,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.4,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:50.780059"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0009_sync_0",
+          "confidence": 0.6054328571782133,
+          "description": "none色tree的north侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.6054328571782133,
+          "x": 7.11,
+          "y": 1.6
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "none"
+          ],
+          "directions": [
+            "north"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "tree"
+          ]
+        },
+        "processing_time_ms": 2.4538040161132812,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "none",
+          "confidence": 0.8,
+          "direction": "north",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "tree",
+          "original_query": "在大树北面的小车",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.4,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143050_20",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.6054328571782133,
+            "description": "none色tree的north侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6054328571782133,
+            "x": 7.11,
+            "y": 1.6
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.6014310147816035,
+            "description": "none色tree的north侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6014310147816035,
+            "x": -9.41,
+            "y": 14.33
+          },
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.5991033664233504,
+            "description": "none色tree的north侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.5991033664233504,
+            "x": 9.5,
+            "y": -6.3
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.6054328571782133,
+            "description": "none色tree的north侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.6054328571782133,
+            "x": 7.11,
+            "y": 1.6
+          },
+          {
+            "cell_id": "2013_05_28_drive_0003_sync_0",
+            "confidence": 0.6014310147816035,
+            "description": "none色tree的north侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.6014310147816035,
+            "x": -9.41,
+            "y": 14.33
+          },
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.5991033664233504,
+            "description": "none色tree的north侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.5991033664233504,
+            "x": 9.5,
+            "y": -6.3
+          }
+        ],
+        "session_id": "sess_1770532250778",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "白色墙壁左侧的黑色门",
+      "status": "success",
+      "total_time_ms": 11.42,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -13.79,
+        "y": 2.89,
+        "cell_id": "2013_05_28_drive_0007_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 8.13,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.19,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:51.295155"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0007_sync_0",
+          "confidence": 0.7650604282261336,
+          "description": "black色wall的west侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.7650604282261336,
+          "x": -13.79,
+          "y": 2.89
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "black"
+          ],
+          "directions": [
+            "west"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "wall"
+          ]
+        },
+        "processing_time_ms": 8.491992950439453,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "black",
+          "confidence": 0.9,
+          "direction": "west",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "wall",
+          "original_query": "白色墙壁左侧的黑色门",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.19,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143051_21",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.7650604282261336,
+            "description": "black色wall的west侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.7650604282261336,
+            "x": -13.79,
+            "y": 2.89
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.7451718182924428,
+            "description": "black色wall的west侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.7451718182924428,
+            "x": 1.2,
+            "y": 0.75
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.7411590499527648,
+            "description": "black色wall的west侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.7411590499527648,
+            "x": -9.57,
+            "y": 13.32
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.7650604282261336,
+            "description": "black色wall的west侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.7650604282261336,
+            "x": -13.79,
+            "y": 2.89
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.7451718182924428,
+            "description": "black色wall的west侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.7451718182924428,
+            "x": 1.2,
+            "y": 0.75
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.7411590499527648,
+            "description": "black色wall的west侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.7411590499527648,
+            "x": -9.57,
+            "y": 13.32
+          }
+        ],
+        "session_id": "sess_1770532251287",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "附近有个红色的东西",
+      "status": "success",
+      "total_time_ms": 8.05,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 7.11,
+        "y": 1.6,
+        "cell_id": "2013_05_28_drive_0009_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 5.66,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.12,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:51.807072"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0009_sync_0",
+          "confidence": 0.18118075375533285,
+          "description": "red色none的east侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.18118075375533285,
+          "x": 7.11,
+          "y": 1.6
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "red"
+          ],
+          "directions": [
+            "east"
+          ],
+          "distances": [
+            "close"
+          ],
+          "landmarks": [],
+          "objects": [
+            "none"
+          ]
+        },
+        "processing_time_ms": 5.967140197753906,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "red",
+          "confidence": 0.8,
+          "direction": "east",
+          "distance": "close",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "none",
+          "original_query": "附近有个红色的东西",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.12,
+          "real_model_used": true,
+          "relation": "near",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143051_22",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.18118075375533285,
+            "description": "red色none的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.18118075375533285,
+            "x": 7.11,
+            "y": 1.6
+          },
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.1722587322975506,
+            "description": "red色none的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.1722587322975506,
+            "x": 7.28,
+            "y": 1.94
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.17225388693783772,
+            "description": "red色none的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.17225388693783772,
+            "x": 7.86,
+            "y": 3.16
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.18118075375533285,
+            "description": "red色none的east侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.18118075375533285,
+            "x": 7.11,
+            "y": 1.6
+          },
+          {
+            "cell_id": "2013_05_28_drive_0007_sync_0",
+            "confidence": 0.1722587322975506,
+            "description": "red色none的east侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.1722587322975506,
+            "x": 7.28,
+            "y": 1.94
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.17225388693783772,
+            "description": "red色none的east侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.17225388693783772,
+            "x": 7.86,
+            "y": 3.16
+          }
+        ],
+        "session_id": "sess_1770532251801",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "好像在左边有什么",
+      "status": "success",
+      "total_time_ms": 6.17,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 9.5,
+        "y": -6.3,
+        "cell_id": "2013_05_28_drive_0006_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 1.62,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.29,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:52.315911"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0006_sync_0",
+          "confidence": 0.16735291704863636,
+          "description": "none色none的west侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.16735291704863636,
+          "x": 9.5,
+          "y": -6.3
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "none"
+          ],
+          "directions": [
+            "west"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "none"
+          ]
+        },
+        "processing_time_ms": 1.9960403442382812,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "none",
+          "confidence": 0.7,
+          "direction": "west",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "none",
+          "original_query": "好像在左边有什么",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.29,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143052_23",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.16735291704863636,
+            "description": "none色none的west侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.16735291704863636,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.16679633153513038,
+            "description": "none色none的west侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.16679633153513038,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.16639226906690055,
+            "description": "none色none的west侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.16639226906690055,
+            "x": 7.11,
+            "y": 1.6
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.16735291704863636,
+            "description": "none色none的west侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.16735291704863636,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0002_sync_0",
+            "confidence": 0.16679633153513038,
+            "description": "none色none的west侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.16679633153513038,
+            "x": 7.86,
+            "y": 3.16
+          },
+          {
+            "cell_id": "2013_05_28_drive_0009_sync_0",
+            "confidence": 0.16639226906690055,
+            "description": "none色none的west侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.16639226906690055,
+            "x": 7.11,
+            "y": 1.6
+          }
+        ],
+        "session_id": "sess_1770532252314",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "大概是建筑物周围",
+      "status": "success",
+      "total_time_ms": 6.53,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": -11.78,
+        "y": -2.35,
+        "cell_id": "2013_05_28_drive_0004_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 0.98,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.3,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:52.827741"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0004_sync_0",
+          "confidence": 0.41866611729279285,
+          "description": "none色building的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.41866611729279285,
+          "x": -11.78,
+          "y": -2.35
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "none"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 1.3799667358398438,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "none",
+          "confidence": 0.7,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": "大概是建筑物周围",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.3,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143052_24",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.41866611729279285,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.41866611729279285,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.41585616185756724,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.41585616185756724,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.40676910886570633,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.40676910886570633,
+            "x": 12.63,
+            "y": -13.07
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0004_sync_0",
+            "confidence": 0.41866611729279285,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.41866611729279285,
+            "x": -11.78,
+            "y": -2.35
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.41585616185756724,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.41585616185756724,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.40676910886570633,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.40676910886570633,
+            "x": 12.63,
+            "y": -13.07
+          }
+        ],
+        "session_id": "sess_1770532252826",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "不清楚具体位置但有棵树",
+      "status": "success",
+      "total_time_ms": 5.78,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 9.93,
+        "y": -3.63,
+        "cell_id": "2013_05_28_drive_0005_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 1.19,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.24,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:53.338058"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0005_sync_0",
+          "confidence": 0.41870866925801475,
+          "description": "none色tree的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.41870866925801475,
+          "x": 9.93,
+          "y": -3.63
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "none"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "tree"
+          ]
+        },
+        "processing_time_ms": 1.5370845794677734,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "none",
+          "confidence": 0.7,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "tree",
+          "original_query": "不清楚具体位置但有棵树",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.24,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143053_25",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.41870866925801475,
+            "description": "none色tree的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.41870866925801475,
+            "x": 9.93,
+            "y": -3.63
+          },
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.4177831405890941,
+            "description": "none色tree的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4177831405890941,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.41715783574363535,
+            "description": "none色tree的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.41715783574363535,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.41870866925801475,
+            "description": "none色tree的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.41870866925801475,
+            "x": 9.93,
+            "y": -3.63
+          },
+          {
+            "cell_id": "2013_05_28_drive_0006_sync_0",
+            "confidence": 0.4177831405890941,
+            "description": "none色tree的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4177831405890941,
+            "x": 9.5,
+            "y": -6.3
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.41715783574363535,
+            "description": "none色tree的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.41715783574363535,
+            "x": -10.15,
+            "y": -14.21
+          }
+        ],
+        "session_id": "sess_1770532253336",
+        "status": "success",
+        "suggestions": []
+      }
+    },
+    {
+      "query": " somewhere around the building",
+      "status": "success",
+      "total_time_ms": 8.58,
+      "nlu_time_ms": 0,
+      "nlu_confidence": 0,
+      "nlu_components": {},
+      "coordinates": {
+        "x": 12.63,
+        "y": -13.07,
+        "cell_id": "2013_05_28_drive_0000_sync_0",
+        "is_real": true
+      },
+      "candidates_count": 0,
+      "response_data": {
+        "clarification_question": null,
+        "debug_info": {
+          "api_time_ms": 0.93,
+          "candidates_generated": 3,
+          "nlu_engine": "qwen3-vl:4b",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.2,
+          "timed_out": false,
+          "timestamp": "2026-02-08T14:30:53.846901"
+        },
+        "error": null,
+        "final_result": {
+          "cell_id": "2013_05_28_drive_0000_sync_0",
+          "confidence": 0.416921581728236,
+          "description": "none色building的none侧",
+          "method": "enhanced_nlu",
+          "rank": 1,
+          "reference_objects": [],
+          "score": 0.416921581728236,
+          "x": 12.63,
+          "y": -13.07
+        },
+        "intent": "location_query",
+        "mode": "enhanced",
+        "need_clarification": false,
+        "parsing_details": {
+          "colors": [
+            "none"
+          ],
+          "directions": [
+            "none"
+          ],
+          "distances": [
+            "none"
+          ],
+          "landmarks": [],
+          "objects": [
+            "building"
+          ]
+        },
+        "processing_time_ms": 2.2881031036376953,
+        "query_analysis": {
+          "clarification_question": null,
+          "color": "none",
+          "confidence": 0.7,
+          "direction": "none",
+          "distance": "none",
+          "enhanced_used": true,
+          "intent": "location_query",
+          "need_clarification": false,
+          "nlu_model": "qwen3-vl:4b",
+          "object": "building",
+          "original_query": " somewhere around the building",
+          "parse_method": "ai_qwen3_vl:4b",
+          "parse_time_ms": 0.2,
+          "real_model_used": true,
+          "relation": "none",
+          "suggestions": []
+        },
+        "query_id": "query_20260208_143053_26",
+        "results": [
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.416921581728236,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.416921581728236,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.4132657653460926,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4132657653460926,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.4054850488717961,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.4054850488717961,
+            "x": 9.93,
+            "y": -3.63
+          }
+        ],
+        "retrieval_results": [
+          {
+            "cell_id": "2013_05_28_drive_0000_sync_0",
+            "confidence": 0.416921581728236,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 1,
+            "reference_objects": [],
+            "score": 0.416921581728236,
+            "x": 12.63,
+            "y": -13.07
+          },
+          {
+            "cell_id": "2013_05_28_drive_0010_sync_0",
+            "confidence": 0.4132657653460926,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 2,
+            "reference_objects": [],
+            "score": 0.4132657653460926,
+            "x": -10.15,
+            "y": -14.21
+          },
+          {
+            "cell_id": "2013_05_28_drive_0005_sync_0",
+            "confidence": 0.4054850488717961,
+            "description": "none色building的none侧",
+            "method": "enhanced_nlu",
+            "rank": 3,
+            "reference_objects": [],
+            "score": 0.4054850488717961,
+            "x": 9.93,
+            "y": -3.63
+          }
+        ],
+        "session_id": "sess_1770532253845",
+        "status": "success",
+        "suggestions": []
+      }
+    }
+  ],
+  "aggregated_metrics": {
+    "total_queries": 26,
+    "successful_queries": 26,
+    "success_rate": 100.0,
+    "performance": {
+      "avg_total_time_ms": 9.74,
+      "median_total_time_ms": 9.89,
+      "min_total_time_ms": 5.52,
+      "max_total_time_ms": 16.33,
+      "std_total_time_ms": 3.19,
+      "avg_nlu_time_ms": 0,
+      "avg_nlu_confidence": 0
+    },
+    "coordinates": {
+      "real_coordinate_rate": 100.0,
+      "coord_x_range": {
+        "min": -13.79,
+        "max": 12.63,
+        "avg": 0.46
+      },
+      "coord_y_range": {
+        "min": -14.21,
+        "max": 3.16,
+        "avg": -4.54
+      }
+    },
+    "nlu_coverage": {
+      "direction_recognition_rate": 100.0,
+      "color_recognition_rate": 100.0,
+      "object_recognition_rate": 100.0
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "verified_real": [
+    {
+      "file": "comparison_enhanced_results.json",
+      "reasons": [
+        "统计指标合理",
+        "数值有合理波动 (std=18.5109)"
+      ]
+    },
+    {
+      "file": "comparison_report_final.json",
+      "reasons": [
+        "包含时间戳",
+        "统计指标合理",
+        "数值有合理波动 (std=7.6051)"
+      ]
+    },
+    {
+      "file": "comparison_v2_results.json",
+      "reasons": [
+        "统计指标合理",
+        "数值有合理波动 (std=18.4903)"
+      ]
+    },
+    {
+      "file": "comprehensive_advantage_analysis.json",
+      "reasons": [
+        "包含时间戳",
+        "统计指标合理",
+        "数值有合理波动 (std=488.3888)"
+      ]
+    },
+    {
+      "file": "comprehensive_comparison_results.json",
+      "reasons": [
+        "包含时间戳",
+        "统计指标合理",
+        "数值有合理波动 (std=1121.4482)"
+      ]
+    },
+    {
+      "file": "fair_comparison_results.json",
+      "reasons": [
+        "统计指标合理",
+        "数值有合理波动 (std=1836.8484)"
+      ]
+    },
+    {
+      "file": "final_comparison_results.json",
+      "reasons": [
+        "包含时间戳",
+        "统计指标合理",
+        "数值有合理波动 (std=33.6234)"
+      ]
+    },
+    {
+      "file": "final_experiment_results.json",
+      "reasons": [
+        "通过真实性检查"
+      ]
+    },
+    {
+      "file": "innovative_3d_comparison.json",
+      "reasons": [
+        "统计指标合理",
+        "数值有合理波动 (std=699.8517)"
+      ]
+    },
+    {
+      "file": "integrated_system_comparison_results.json",
+      "reasons": [
+        "包含时间戳",
+        "统计指标合理",
+        "数值有合理波动 (std=59.7187)"
+      ]
+    },
+    {
+      "file": "large_scale_comparison_results.json",
+      "reasons": [
+        "统计指标合理",
+        "数值有合理波动 (std=544.0868)"
+      ]
+    },
+    {
+      "file": "massive_experiment_results.json",
+      "reasons": [
+        "包含时间戳",
+        "统计指标合理",
+        "数值有合理波动 (std=4709.8730)"
+      ]
+    },
+    {
+      "file": "test_report.json",
+      "reasons": [
+        "包含时间戳"
+      ]
+    },
+    {
+      "file": "test_report_20260205_121219.json",
+      "reasons": [
+        "包含时间戳",
+        "统计指标合理",
+        "数值有合理波动 (std=2.1232)"
+      ]
+    },
+    {
+      "file": "test_report_20260205_121550.json",
+      "reasons": [
+        "包含时间戳",
+        "统计指标合理",
+        "数值有合理波动 (std=2.1147)"
+      ]
+    }
+  ],
+  "suspicious": [
+    {
+      "file": "advantage_analysis_report.json",
+      "reasons": [
+        "样本量过小: 6"
+      ]
+    },
+    {
+      "file": "comprehensive_test_report_20260207_221641.json",
+      "reasons": [
+        "样本量过小: 5"
+      ]
+    },
+    {
+      "file": "deep_analysis_results.json",
+      "reasons": [
+        "样本量过小: 2"
+      ]
+    },
+    {
+      "file": "final_acceptance_report_20260205_151508.json",
+      "reasons": [
+        "样本量过小: 5"
+      ]
+    },
+    {
+      "file": "m2_ablation_results.json",
+      "reasons": [
+        "样本量过小: 5"
+      ]
+    },
+    {
+      "file": "robustness_experiment_results.json",
+      "reasons": [
+        "样本量过小: 3"
+      ]
+    },
+    {
+      "file": "test_remote_voice_results.json",
+      "reasons": [
+        "样本量过小: 5"
+      ]
+    },
+    {
+      "file": "真实系统测试报告.json",
+      "reasons": [
+        "样本量过小: 3"
+      ]
+    },
+    {
+      "file": "自动化测试报告.json",
+      "reasons": [
+        "所有数值完全相同，可能是模拟数据"
+      ]
+    }
+  ],
+  "simulated": [
+    {
+      "file": "ollama_text2loc_config.json",
+      "reasons": [
+        "包含模拟关键词: mock"
+      ]
+    },
+    {
+      "file": "systematic_comparison_results.json",
+      "reasons": [
+        "包含模拟关键词: demo"
+      ]
+    },
+    {
+      "file": "text2loc_real_system_test_20260208_143054.json",
+      "reasons": [
+        "包含模拟关键词: generated"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "file": "root_cause_analysis.json",
+      "error": "cannot convert float NaN to integer"
+    },
+    {
+      "file": "strict_validation_results.json",
+      "error": "Expecting value: line 2 column 24 (char 25)"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "experiment_timestamp": "2026-02-08 14:24:59",
+  "baseline_system": {
+    "error": "Text2Loc-main 系统不可用"
+  },
+  "enhanced_system": {
+    "system_type": "enhanced",
+    "response_time": {
+      "average_ms": 1.83,
+      "median_ms": 2.52,
+      "std_ms": 1.41
+    },
+    "accuracy": {
+      "mean_error_m": 3.638,
+      "median_error_m": 3.814,
+      "std_error_m": 0.99,
+      "accuracy_rates": {
+        "within_1m": 0.0,
+        "within_3m": 23.5,
+        "within_5m": 94.1,
+        "within_10m": 100.0
+      }
+    },
+    "success_rate": 100.0,
+    "nlu_capabilities": {
+      "structured_output": true,
+      "direction_words": 32,
+      "color_words": 11,
+      "object_categories": 40,
+      "spatial_relations": 10,
+      "distance_extraction": true
+    },
+    "deployment": {
+      "gpu_required": false,
+      "model_size_mb": 17.5,
+      "memory_usage_mb": 241,
+      "startup_time_seconds": 8
+    },
+    "unique_features": {
+      "cross_device_support": true,
+      "real_time_voice": true,
+      "iphone_frontend": true,
+      "wifi_lan": true,
+      "structured_nlu": true
+    }
+  },
+  "comparison_analysis": {
+    "error": "系统测试失败"
+  }
+}

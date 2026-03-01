@@ -1,0 +1,74 @@
+{
+  "cross_cell": {
+    "\u8fb9\u7f18\u4f4d\u7f6e": {
+      "count": 1415,
+      "text2loc_one_mean_error": 4.974178658944377,
+      "text2loc_one_acc_5m": 59.434628975265014,
+      "visionary_mean_error": 4.975169388979496,
+      "visionary_acc_5m": 59.434628975265014,
+      "improvement_percent": -0.019917459806913024
+    },
+    "\u4e2d\u5fc3\u4f4d\u7f6e": {
+      "count": 976,
+      "text2loc_one_mean_error": 1.9138383441745705,
+      "text2loc_one_acc_5m": 100.0,
+      "visionary_mean_error": 1.9163566324676051,
+      "visionary_acc_5m": 100.0,
+      "improvement_percent": -0.13158312459878643
+    }
+  },
+  "scene_complexity": {
+    "\u7b80\u5355\u573a\u666f(\u22645\u5bf9\u8c61)": {
+      "count": 2355,
+      "text2loc_one_mean_error": 3.726894979573216,
+      "text2loc_one_acc_5m": 75.92356687898089,
+      "visionary_mean_error": 3.7287060814259667,
+      "visionary_acc_5m": 75.92356687898089,
+      "improvement_percent": -0.04859546251443025
+    }
+  },
+  "description_quality": {
+    "\u7b80\u77ed\u63cf\u8ff0(<30)": {
+      "count": 2380,
+      "text2loc_one_mean_error": 3.723884027076815,
+      "text2loc_one_acc_5m": 76.05042016806722,
+      "visionary_mean_error": 3.725437799513194,
+      "visionary_acc_5m": 76.05042016806722,
+      "improvement_percent": -0.04172451196335736
+    },
+    "\u4e2d\u7b49\u63cf\u8ff0(30-60)": {
+      "count": 11,
+      "text2loc_one_mean_error": 3.9568219888959124,
+      "text2loc_one_acc_5m": 63.63636363636363,
+      "visionary_mean_error": 3.9715268957241836,
+      "visionary_acc_5m": 63.63636363636363,
+      "improvement_percent": -0.3716342779517953
+    }
+  },
+  "distance_ranges": {
+    "\u4f4e\u8bef\u5dee\u573a\u666f(<2m)": {
+      "count": 480,
+      "text2loc_one_mean_error": 1.2866597400555135,
+      "text2loc_one_acc_5m": 100.0,
+      "visionary_mean_error": 1.2903777490989514,
+      "visionary_acc_5m": 100.0,
+      "improvement_percent": -0.2889659890405424
+    },
+    "\u4e2d\u7b49\u8bef\u5dee\u573a\u666f(2-5m)": {
+      "count": 1337,
+      "text2loc_one_mean_error": 3.390287323954935,
+      "text2loc_one_acc_5m": 100.0,
+      "visionary_mean_error": 3.391700389321934,
+      "visionary_acc_5m": 99.4016454749439,
+      "improvement_percent": -0.04167981153144276
+    },
+    "\u9ad8\u8bef\u5dee\u573a\u666f(\u22655m)": {
+      "count": 574,
+      "text2loc_one_mean_error": 6.543481182868082,
+      "text2loc_one_acc_5m": 0.0,
+      "visionary_mean_error": 6.543804910458966,
+      "visionary_acc_5m": 1.3937282229965158,
+      "improvement_percent": -0.004947329744463331
+    }
+  }
+}

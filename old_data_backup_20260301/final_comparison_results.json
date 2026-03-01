@@ -1,0 +1,29 @@
+{
+  "text2loc_one": {
+    "mean_error": 3.7311301993419526,
+    "median_error": 3.5133602562466213,
+    "acc_1m": 5.041666666666666,
+    "acc_3m": 38.79166666666667,
+    "acc_5m": 76.0,
+    "acc_10m": 99.625,
+    "max_error": 12.670574691872595,
+    "std_error": 1.9289209358161779,
+    "mean_inference_time": 0.5848075018851281
+  },
+  "text2loc_visionary": {
+    "mean_error": 3.7338990684773097,
+    "median_error": 3.5186912447412135,
+    "acc_1m": 5.0,
+    "acc_3m": 38.708333333333336,
+    "acc_5m": 76.20833333333333,
+    "acc_10m": 99.625,
+    "max_error": 12.655796653668146,
+    "std_error": 1.9251137903008493,
+    "mean_inference_time": 0.006687803268432617
+  },
+  "improvements": {
+    "error_reduction_m": -0.0027688691353571215,
+    "acc_5m_improvement": 0.2083333333333286,
+    "relative_improvement_percent": -0.07420993070264496
+  }
+}

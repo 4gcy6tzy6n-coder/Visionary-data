@@ -1,0 +1,391 @@
+{
+  "timestamp": "2026-02-05T12:15:50.145397",
+  "summary": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0,
+    "success_rate": 1.0,
+    "avg_time_ms": 2.033710479736328,
+    "avg_api_time_ms": 2.028369903564453,
+    "avg_accuracy": 0.5666666666666667,
+    "data_consistency_rate": 1.0
+  },
+  "results": [
+    {
+      "query": "找到红色的汽车",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 3.6950111389160156,
+      "api_time_ms": 3.6878585815429688,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 1.0,
+        "checks": [
+          "✓ 颜色: red",
+          "✓ 对象: car"
+        ],
+        "score": 2,
+        "total": 2
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "none"
+        ],
+        "colors": [
+          "red"
+        ],
+        "objects": [
+          "car"
+        ]
+      }
+    },
+    {
+      "query": "在建筑物左侧的树",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 0.2689361572265625,
+      "api_time_ms": 0.2627372741699219,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 0.5,
+        "checks": [
+          "✗ 对象: 期望 tree, 得到 ['building']",
+          "✓ 方向: west"
+        ],
+        "score": 1,
+        "total": 2
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "west"
+        ],
+        "colors": [
+          "none"
+        ],
+        "objects": [
+          "building"
+        ]
+      }
+    },
+    {
+      "query": "距离入口10米的地方",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 0.1537799835205078,
+      "api_time_ms": 0.15115737915039062,
+      "has_results": false,
+      "result_count": 0,
+      "validation": {
+        "accuracy": 0.0,
+        "checks": [
+          "✗ 对象: 期望 entrance, 得到 ['none']"
+        ],
+        "score": 0,
+        "total": 1
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": []
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "none"
+        ],
+        "colors": [
+          "none"
+        ],
+        "objects": [
+          "none"
+        ]
+      }
+    },
+    {
+      "query": "蓝色的椅子在停车场",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 3.2958984375,
+      "api_time_ms": 3.2911300659179688,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 0.5,
+        "checks": [
+          "✓ 颜色: blue",
+          "✗ 对象: 期望 chair, 得到 ['car']"
+        ],
+        "score": 1,
+        "total": 2
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "none"
+        ],
+        "colors": [
+          "blue"
+        ],
+        "objects": [
+          "car"
+        ]
+      }
+    },
+    {
+      "query": "白色的建筑物前面",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 3.105640411376953,
+      "api_time_ms": 3.0999183654785156,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 1.0,
+        "checks": [
+          "✓ 颜色: white",
+          "✓ 对象: building",
+          "✓ 方向: front"
+        ],
+        "score": 3,
+        "total": 3
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "front"
+        ],
+        "colors": [
+          "white"
+        ],
+        "objects": [
+          "building"
+        ]
+      }
+    },
+    {
+      "query": "在停车场入口附近",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 0.22101402282714844,
+      "api_time_ms": 0.21505355834960938,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 0.0,
+        "checks": [
+          "✗ 对象: 期望 entrance, 得到 ['car']"
+        ],
+        "score": 0,
+        "total": 1
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "none"
+        ],
+        "colors": [
+          "none"
+        ],
+        "objects": [
+          "car"
+        ]
+      }
+    },
+    {
+      "query": "找到一棵树在道路右边",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 0.18668174743652344,
+      "api_time_ms": 0.18167495727539062,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 1.0,
+        "checks": [
+          "✓ 对象: tree",
+          "✓ 方向: east"
+        ],
+        "score": 2,
+        "total": 2
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "east"
+        ],
+        "colors": [
+          "none"
+        ],
+        "objects": [
+          "tree"
+        ]
+      }
+    },
+    {
+      "query": "在红色汽车旁边的蓝色标志",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 3.1561851501464844,
+      "api_time_ms": 3.1511783599853516,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 0.0,
+        "checks": [
+          "✗ 颜色: 期望 blue, 得到 ['red']",
+          "✗ 对象: 期望 sign, 得到 ['car']"
+        ],
+        "score": 0,
+        "total": 2
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "none"
+        ],
+        "colors": [
+          "red"
+        ],
+        "objects": [
+          "car"
+        ]
+      }
+    },
+    {
+      "query": "在建筑物前面的绿色草坪",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 3.0679702758789062,
+      "api_time_ms": 3.063201904296875,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 0.6666666666666666,
+        "checks": [
+          "✓ 颜色: green",
+          "✗ 对象: 期望 grass, 得到 ['building']",
+          "✓ 方向: front"
+        ],
+        "score": 2,
+        "total": 3
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "front"
+        ],
+        "colors": [
+          "green"
+        ],
+        "objects": [
+          "building"
+        ]
+      }
+    },
+    {
+      "query": "找到黄色的交通标志",
+      "status": "success",
+      "success": true,
+      "total_time_ms": 3.1859874725341797,
+      "api_time_ms": 3.179788589477539,
+      "has_results": true,
+      "result_count": 5,
+      "validation": {
+        "accuracy": 1.0,
+        "checks": [
+          "✓ 颜色: yellow",
+          "✓ 对象: sign"
+        ],
+        "score": 2,
+        "total": 2
+      },
+      "consistency": {
+        "consistent": true,
+        "checks": [
+          "✓ 结果数量一致",
+          "✓ 最终结果在结果列表中",
+          "✓ 分数在合理范围 [0, 1]"
+        ]
+      },
+      "mode": "enhanced",
+      "parsing_details": {
+        "directions": [
+          "none"
+        ],
+        "colors": [
+          "yellow"
+        ],
+        "objects": [
+          "sign"
+        ]
+      }
+    }
+  ]
+}

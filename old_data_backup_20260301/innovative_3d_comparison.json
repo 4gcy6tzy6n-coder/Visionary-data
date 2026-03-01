@@ -1,0 +1,38 @@
+{
+  "3d_height": {
+    "\u9ad8\u9ad8\u5ea6(z\u22653m)": {
+      "count": 2256,
+      "text2loc_one_mean_error": 3.824530938888158,
+      "visionary_mean_error": 3.8260540931405993,
+      "improvement_percent": -0.03982591007314499,
+      "key_advantage": "Visionary\u5229\u75283D\u9ad8\u5ea6\u4fe1\u606f\uff0cone\u53ea\u75282D\u4e2d\u5fc3"
+    }
+  },
+  "semantic_association": {
+    "\u63cf\u8ff0\u5bf9\u8c61\u4e0d\u5339\u914d": {
+      "count": 654,
+      "text2loc_one_mean_error": 3.781159343924531,
+      "visionary_mean_error": 3.7869256846743213,
+      "improvement_percent": -0.15250192402115376,
+      "key_advantage": "Visionary\u80fd\u5173\u8054\u63cf\u8ff0\u5bf9\u8c61\u548c\u5b9e\u9645\u5bf9\u8c61\uff0cone\u4e0d\u80fd"
+    }
+  },
+  "spatial_relation": {},
+  "distance_estimation": {},
+  "contextual": {
+    "\u77ed\u63cf\u8ff0(<20)": {
+      "count": 1983,
+      "text2loc_one_mean_error": 3.8253801573326407,
+      "visionary_mean_error": 3.826451538132955,
+      "improvement_percent": -0.02800717199990624,
+      "key_advantage": "Visionary\u80fd\u5229\u7528\u4e0a\u4e0b\u6587\u4fe1\u606f\uff0cone\u5ffd\u7565\u63cf\u8ff0\u5185\u5bb9"
+    },
+    "\u4e2d\u7b49\u63cf\u8ff0(20-50)": {
+      "count": 273,
+      "text2loc_one_mean_error": 3.818362440077137,
+      "visionary_mean_error": 3.823167157536785,
+      "improvement_percent": -0.1258318856591074,
+      "key_advantage": "Visionary\u80fd\u5229\u7528\u4e0a\u4e0b\u6587\u4fe1\u606f\uff0cone\u5ffd\u7565\u63cf\u8ff0\u5185\u5bb9"
+    }
+  }
+}

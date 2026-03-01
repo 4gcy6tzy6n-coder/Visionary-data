@@ -1,0 +1,866 @@
+{
+  "project_name": "Text2Loc Visionary",
+  "test_date": "2026-02-07 22:16:41",
+  "dataset": "KITTI360Pose (k360_30-10_scG_pd10_pc4_spY_all)",
+  "cell_count": 9,
+  "summary": {
+    "functionality": {
+      "total_tests": 25,
+      "passed_tests": 25,
+      "pass_rate": 100.0
+    },
+    "algorithm_improvement": {
+      "basic_accuracy": 64.16666666666666,
+      "advanced_accuracy": 82.5,
+      "improvement_percent": 28.571428571428577
+    },
+    "coordinates": {
+      "real_coordinate_rate": 0.0
+    },
+    "performance": {
+      "avg_response_ms": 1.188039779663086,
+      "grade": "A+ (极快)"
+    }
+  },
+  "detailed_results": {
+    "functionality": {
+      "total_tests": 25,
+      "total_passed": 25,
+      "pass_rate": 1.0,
+      "categories": {
+        "基础文本查询": {
+          "tests": [
+            {
+              "query": "找到红色的汽车",
+              "passed": true,
+              "time_ms": 4.24,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "在建筑物左侧的树",
+              "passed": true,
+              "time_ms": 0.31,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "蓝色的椅子在停车场",
+              "passed": true,
+              "time_ms": 3.04,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "白色的建筑物前面",
+              "passed": true,
+              "time_ms": 3.13,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "黄色的交通标志",
+              "passed": true,
+              "time_ms": 3.61,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            }
+          ],
+          "passed": 5,
+          "total": 5
+        },
+        "颜色识别": {
+          "tests": [
+            {
+              "query": "红色的车",
+              "passed": true,
+              "time_ms": 3.72,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "蓝色的标志",
+              "passed": true,
+              "time_ms": 3.54,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "绿色的草坪",
+              "passed": true,
+              "time_ms": 4.88,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "白色的墙",
+              "passed": true,
+              "time_ms": 4.46,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "黑色的汽车",
+              "passed": true,
+              "time_ms": 3.89,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            }
+          ],
+          "passed": 5,
+          "total": 5
+        },
+        "方向识别": {
+          "tests": [
+            {
+              "query": "左边的建筑",
+              "passed": true,
+              "time_ms": 0.44,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "右边的树",
+              "passed": true,
+              "time_ms": 0.32,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "前面的广场",
+              "passed": true,
+              "time_ms": 0.17,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "后面的停车场",
+              "passed": true,
+              "time_ms": 0.33,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "北边的入口",
+              "passed": true,
+              "time_ms": 0.15,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            }
+          ],
+          "passed": 5,
+          "total": 5
+        },
+        "对象识别": {
+          "tests": [
+            {
+              "query": "找到建筑物",
+              "passed": true,
+              "time_ms": 0.31,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "看到汽车",
+              "passed": true,
+              "time_ms": 0.31,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "在树旁边",
+              "passed": true,
+              "time_ms": 0.28,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "标志牌附近",
+              "passed": true,
+              "time_ms": 0.28,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "停车场入口",
+              "passed": true,
+              "time_ms": 0.27,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            }
+          ],
+          "passed": 5,
+          "total": 5
+        },
+        "复合查询": {
+          "tests": [
+            {
+              "query": "在红色建筑物左侧的树",
+              "passed": true,
+              "time_ms": 3.9,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "找到停车场入口附近的蓝色标志",
+              "passed": true,
+              "time_ms": 4.23,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "在白色汽车旁边的人行道",
+              "passed": true,
+              "time_ms": 4.13,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "在黄色交通灯右侧的建筑物",
+              "passed": true,
+              "time_ms": 3.76,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            },
+            {
+              "query": "距离入口10米的绿色草坪",
+              "passed": true,
+              "time_ms": 3.56,
+              "coordinates": {
+                "x": 0.0,
+                "y": 0.0,
+                "cell_id": "N/A"
+              },
+              "status": "success"
+            }
+          ],
+          "passed": 5,
+          "total": 5
+        }
+      }
+    },
+    "algorithm_comparison": {
+      "basic_nlu": {
+        "avg_accuracy": 0.6416666666666666,
+        "avg_time_ms": 0.017714500427246094,
+        "details": [
+          {
+            "query": "找到红色的汽车",
+            "expected": {
+              "color": "red",
+              "object": "car"
+            },
+            "result": {
+              "direction": null,
+              "color": "red",
+              "object": "car",
+              "confidence": 0.6666666666666666,
+              "model": "basic_rules"
+            },
+            "accuracy": 1.0,
+            "time_ms": 0.010967254638671875,
+            "description": "颜色+对象识别"
+          },
+          {
+            "query": "在建筑物左侧的树",
+            "expected": {
+              "direction": "left",
+              "object": "tree"
+            },
+            "result": {
+              "direction": "west",
+              "color": null,
+              "object": "building",
+              "confidence": 0.6666666666666666,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.5,
+            "time_ms": 0.013113021850585938,
+            "description": "方向+对象识别"
+          },
+          {
+            "query": "距离入口10米的地方",
+            "expected": {
+              "object": "entrance",
+              "distance": "10"
+            },
+            "result": {
+              "direction": null,
+              "color": null,
+              "object": "entrance",
+              "confidence": 0.3333333333333333,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.5,
+            "time_ms": 0.010013580322265625,
+            "description": "距离+对象识别"
+          },
+          {
+            "query": "蓝色的椅子在停车场",
+            "expected": {
+              "color": "blue",
+              "object": "chair"
+            },
+            "result": {
+              "direction": null,
+              "color": "blue",
+              "object": "car",
+              "confidence": 0.6666666666666666,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.75,
+            "time_ms": 0.033855438232421875,
+            "description": "颜色+对象+地点"
+          },
+          {
+            "query": "白色的建筑物前面",
+            "expected": {
+              "color": "white",
+              "object": "building",
+              "direction": "front"
+            },
+            "result": {
+              "direction": "north",
+              "color": "white",
+              "object": "building",
+              "confidence": 1.0,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.8333333333333334,
+            "time_ms": 0.0247955322265625,
+            "description": "颜色+对象+方向"
+          },
+          {
+            "query": "在停车场入口附近",
+            "expected": {
+              "object": "entrance",
+              "location": "parking"
+            },
+            "result": {
+              "direction": null,
+              "color": null,
+              "object": "car",
+              "confidence": 0.3333333333333333,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.25,
+            "time_ms": 0.012159347534179688,
+            "description": "空间关系识别"
+          },
+          {
+            "query": "找到一棵树在道路右边",
+            "expected": {
+              "object": "tree",
+              "direction": "right"
+            },
+            "result": {
+              "direction": "east",
+              "color": null,
+              "object": "tree",
+              "confidence": 0.6666666666666666,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.75,
+            "time_ms": 0.013113021850585938,
+            "description": "对象+方向识别"
+          },
+          {
+            "query": "在红色汽车旁边的蓝色标志",
+            "expected": {
+              "color": "blue",
+              "object": "sign"
+            },
+            "result": {
+              "direction": null,
+              "color": "red",
+              "object": "car",
+              "confidence": 0.6666666666666666,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.5,
+            "time_ms": 0.010013580322265625,
+            "description": "复合颜色+对象"
+          },
+          {
+            "query": "在建筑物前面的绿色草坪",
+            "expected": {
+              "color": "green",
+              "object": "grass",
+              "direction": "front"
+            },
+            "result": {
+              "direction": "north",
+              "color": "green",
+              "object": "building",
+              "confidence": 1.0,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.6666666666666666,
+            "time_ms": 0.008106231689453125,
+            "description": "颜色+对象+方向"
+          },
+          {
+            "query": "黄色交通灯的北侧",
+            "expected": {
+              "color": "yellow",
+              "object": "sign",
+              "direction": "north"
+            },
+            "result": {
+              "direction": "north",
+              "color": "yellow",
+              "object": null,
+              "confidence": 0.6666666666666666,
+              "model": "basic_rules"
+            },
+            "accuracy": 0.6666666666666666,
+            "time_ms": 0.04100799560546875,
+            "description": "颜色+对象+方向"
+          }
+        ]
+      },
+      "advanced_nlu": {
+        "avg_accuracy": 0.825,
+        "avg_time_ms": 27523.554825782776,
+        "details": [
+          {
+            "query": "找到红色的汽车",
+            "expected": {
+              "color": "red",
+              "object": "car"
+            },
+            "result": {
+              "direction": {
+                "value": "north",
+                "confidence": 0.5,
+                "normalized": "north"
+              },
+              "color": {
+                "value": "red",
+                "confidence": 0.6
+              },
+              "object": null,
+              "confidence": 0.3
+            },
+            "accuracy": 0.5,
+            "time_ms": 30002.420902252197,
+            "description": "颜色+对象识别"
+          },
+          {
+            "query": "在建筑物左侧的树",
+            "expected": {
+              "direction": "left",
+              "object": "tree"
+            },
+            "result": {
+              "direction": {
+                "value": "左",
+                "confidence": 0.95,
+                "normalized": "north"
+              },
+              "color": null,
+              "object": {
+                "value": "树",
+                "confidence": 0.85
+              },
+              "confidence": 0.6174999999999999
+            },
+            "accuracy": 1.0,
+            "time_ms": 26202.561140060425,
+            "description": "方向+对象识别"
+          },
+          {
+            "query": "距离入口10米的地方",
+            "expected": {
+              "object": "entrance",
+              "distance": "10"
+            },
+            "result": {
+              "direction": {
+                "value": "north",
+                "confidence": 0.5,
+                "normalized": "north"
+              },
+              "color": null,
+              "object": null,
+              "confidence": 0.3
+            },
+            "accuracy": 0.0,
+            "time_ms": 30001.413822174072,
+            "description": "距离+对象识别"
+          },
+          {
+            "query": "蓝色的椅子在停车场",
+            "expected": {
+              "color": "blue",
+              "object": "chair"
+            },
+            "result": {
+              "direction": {
+                "value": "north",
+                "confidence": 0.5,
+                "normalized": "north"
+              },
+              "color": {
+                "value": "blue",
+                "confidence": 0.6
+              },
+              "object": {
+                "value": "parking",
+                "confidence": 0.6
+              },
+              "confidence": 0.3
+            },
+            "accuracy": 1.0,
+            "time_ms": 30004.791021347046,
+            "description": "颜色+对象+地点"
+          },
+          {
+            "query": "白色的建筑物前面",
+            "expected": {
+              "color": "white",
+              "object": "building",
+              "direction": "front"
+            },
+            "result": {
+              "direction": {
+                "value": "north",
+                "confidence": 0.5,
+                "normalized": "north"
+              },
+              "color": {
+                "value": "white",
+                "confidence": 0.6
+              },
+              "object": {
+                "value": "building",
+                "confidence": 0.6
+              },
+              "confidence": 0.3
+            },
+            "accuracy": 1.0,
+            "time_ms": 30002.90012359619,
+            "description": "颜色+对象+方向"
+          },
+          {
+            "query": "在停车场入口附近",
+            "expected": {
+              "object": "entrance",
+              "location": "parking"
+            },
+            "result": {
+              "direction": {
+                "value": "north",
+                "confidence": 0.5,
+                "normalized": "north"
+              },
+              "color": null,
+              "object": {
+                "value": "parking",
+                "confidence": 0.6
+              },
+              "confidence": 0.3
+            },
+            "accuracy": 0.75,
+            "time_ms": 30002.527236938477,
+            "description": "空间关系识别"
+          },
+          {
+            "query": "找到一棵树在道路右边",
+            "expected": {
+              "object": "tree",
+              "direction": "right"
+            },
+            "result": {
+              "direction": {
+                "value": "右边",
+                "confidence": 0.95,
+                "normalized": "east"
+              },
+              "color": null,
+              "object": {
+                "value": "树",
+                "confidence": 0.85
+              },
+              "confidence": 0.6174999999999999
+            },
+            "accuracy": 1.0,
+            "time_ms": 24054.05902862549,
+            "description": "对象+方向识别"
+          },
+          {
+            "query": "在红色汽车旁边的蓝色标志",
+            "expected": {
+              "color": "blue",
+              "object": "sign"
+            },
+            "result": {
+              "direction": {
+                "value": "north",
+                "confidence": 0.5,
+                "normalized": "north"
+              },
+              "color": {
+                "value": "red",
+                "confidence": 0.6
+              },
+              "object": {
+                "value": "sign",
+                "confidence": 0.6
+              },
+              "confidence": 0.3
+            },
+            "accuracy": 1.0,
+            "time_ms": 30001.309871673584,
+            "description": "复合颜色+对象"
+          },
+          {
+            "query": "在建筑物前面的绿色草坪",
+            "expected": {
+              "color": "green",
+              "object": "grass",
+              "direction": "front"
+            },
+            "result": {
+              "direction": {
+                "value": "north",
+                "confidence": 0.5,
+                "normalized": "north"
+              },
+              "color": {
+                "value": "green",
+                "confidence": 0.6
+              },
+              "object": {
+                "value": "building",
+                "confidence": 0.6
+              },
+              "confidence": 0.3
+            },
+            "accuracy": 1.0,
+            "time_ms": 30002.61402130127,
+            "description": "颜色+对象+方向"
+          },
+          {
+            "query": "黄色交通灯的北侧",
+            "expected": {
+              "color": "yellow",
+              "object": "sign",
+              "direction": "north"
+            },
+            "result": {
+              "direction": {
+                "value": "北侧",
+                "confidence": 0.95,
+                "normalized": "north"
+              },
+              "color": {
+                "value": "黄色",
+                "confidence": 0.9
+              },
+              "object": {
+                "value": "交通灯",
+                "confidence": 0.85
+              },
+              "confidence": 0.8674999999999999
+            },
+            "accuracy": 1.0,
+            "time_ms": 14960.951089859009,
+            "description": "颜色+对象+方向"
+          }
+        ]
+      },
+      "improvements": {
+        "accuracy_percent": 28.571428571428577,
+        "accuracy_absolute": 0.18333333333333335,
+        "accuracy_from": 0.6416666666666666,
+        "accuracy_to": 0.825
+      }
+    },
+    "coordinates": {
+      "total_queries": 8,
+      "real_coordinates": 0,
+      "real_rate": 0.0,
+      "details": [
+        {
+          "query": "红色的汽车",
+          "cell_id": "N/A",
+          "x": 0.0,
+          "y": 0.0,
+          "confidence": 0.0,
+          "is_real_coordinate": false
+        },
+        {
+          "query": "建筑物的左侧",
+          "cell_id": "N/A",
+          "x": 0.0,
+          "y": 0.0,
+          "confidence": 0.0,
+          "is_real_coordinate": false
+        },
+        {
+          "query": "停车场入口",
+          "cell_id": "N/A",
+          "x": 0.0,
+          "y": 0.0,
+          "confidence": 0.0,
+          "is_real_coordinate": false
+        },
+        {
+          "query": "蓝色的标志",
+          "cell_id": "N/A",
+          "x": 0.0,
+          "y": 0.0,
+          "confidence": 0.0,
+          "is_real_coordinate": false
+        },
+        {
+          "query": "白色的建筑物",
+          "cell_id": "N/A",
+          "x": 0.0,
+          "y": 0.0,
+          "confidence": 0.0,
+          "is_real_coordinate": false
+        },
+        {
+          "query": "树木在右边",
+          "cell_id": "N/A",
+          "x": 0.0,
+          "y": 0.0,
+          "confidence": 0.0,
+          "is_real_coordinate": false
+        },
+        {
+          "query": "黄色的交通灯",
+          "cell_id": "N/A",
+          "x": 0.0,
+          "y": 0.0,
+          "confidence": 0.0,
+          "is_real_coordinate": false
+        },
+        {
+          "query": "绿色的草坪",
+          "cell_id": "N/A",
+          "x": 0.0,
+          "y": 0.0,
+          "confidence": 0.0,
+          "is_real_coordinate": false
+        }
+      ]
+    },
+    "performance": {
+      "average_ms": 1.188039779663086,
+      "median_ms": 0.21708011627197266,
+      "min_ms": 0.014781951904296875,
+      "max_ms": 4.415035247802734,
+      "p95_ms": 4.415035247802734,
+      "grade": "A+ (极快)",
+      "all_times": [
+        0.029087066650390625,
+        0.019073486328125,
+        0.01621246337890625,
+        0.014781951904296875,
+        0.5319118499755859,
+        0.4050731658935547,
+        4.415035247802734,
+        4.073143005371094
+      ]
+    }
+  }
+}

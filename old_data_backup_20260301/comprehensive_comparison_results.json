@@ -1,0 +1,46 @@
+{
+  "basic_comparison": {
+    "text2loc_one": {
+      "mean_error": 3.7676756452703857,
+      "median_error": 3.5656881418578594,
+      "acc_1m": 5.591397849462366,
+      "acc_3m": 38.32258064516129,
+      "acc_5m": 74.9247311827957,
+      "acc_10m": 99.56989247311829,
+      "max_error": 12.109597615738197,
+      "std_error": 1.968883989884595,
+      "mean_inference_time_ms": 0.0006071793803286749
+    },
+    "visionary": {
+      "mean_error": 3.770080901466475,
+      "median_error": 3.560975005730562,
+      "acc_1m": 5.849462365591398,
+      "acc_3m": 38.10752688172043,
+      "acc_5m": 75.01075268817205,
+      "acc_10m": 99.56989247311829,
+      "max_error": 12.02558411353579,
+      "std_error": 1.9698499767750364,
+      "mean_inference_time_ms": 0.2302363612890927
+    }
+  },
+  "cross_cell": {
+    "text2loc_one": {
+      "mean_error": 3930.8009441123163,
+      "median_error": 4382.663196905941
+    },
+    "visionary": {
+      "mean_error": 4.002246215738463,
+      "median_error": 3.8693535616368586
+    }
+  },
+  "complexity": {
+    "simple": {
+      "text2loc_one": 3.7979019375767558,
+      "count": 1350
+    },
+    "complex": {
+      "text2loc_one": 3.725823855923104,
+      "count": 975
+    }
+  }
+}

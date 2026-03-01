@@ -1,0 +1,818 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-03T18:16:37.223883",
+    "total_tests": 80,
+    "passed": 80,
+    "failed": 0,
+    "success_rate": 100.0,
+    "total_time_seconds": 319.8359079360962
+  },
+  "statistics": {
+    "response_time": {
+      "avg_ms": 4861.729374414758,
+      "min_ms": 1.4009475708007812,
+      "max_ms": 32758.736848831177,
+      "median_ms": 6316.73789024353
+    },
+    "category_breakdown": {
+      "基础方向": {
+        "total": 10,
+        "passed": 10
+      },
+      "颜色物体": {
+        "total": 15,
+        "passed": 15
+      },
+      "复合位置": {
+        "total": 15,
+        "passed": 15
+      },
+      "相对位置": {
+        "total": 10,
+        "passed": 10
+      },
+      "边界-最短": {
+        "total": 2,
+        "passed": 2
+      },
+      "边界-最长": {
+        "total": 1,
+        "passed": 1
+      },
+      "边界-特殊字符": {
+        "total": 1,
+        "passed": 1
+      },
+      "边界-数字": {
+        "total": 1,
+        "passed": 1
+      },
+      "边界-中英文": {
+        "total": 1,
+        "passed": 1
+      },
+      "边界-重复": {
+        "total": 1,
+        "passed": 1
+      },
+      "边界-无效": {
+        "total": 1,
+        "passed": 1
+      },
+      "边界-模糊": {
+        "total": 1,
+        "passed": 1
+      },
+      "边界-复杂": {
+        "total": 1,
+        "passed": 1
+      },
+      "错误处理": {
+        "total": 2,
+        "passed": 2
+      },
+      "错误处理-XSS": {
+        "total": 1,
+        "passed": 1
+      },
+      "错误处理-SQL": {
+        "total": 1,
+        "passed": 1
+      },
+      "错误处理-注入": {
+        "total": 1,
+        "passed": 1
+      },
+      "性能测试": {
+        "total": 10,
+        "passed": 10
+      },
+      "并发测试": {
+        "total": 5,
+        "passed": 5
+      }
+    }
+  },
+  "all_results": [
+    {
+      "test_id": "D01",
+      "query": "北",
+      "category": "基础方向",
+      "response_time_ms": 6.372213363647461,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:17.393787"
+    },
+    {
+      "test_id": "D02",
+      "query": "南",
+      "category": "基础方向",
+      "response_time_ms": 1.7189979553222656,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:17.395542"
+    },
+    {
+      "test_id": "D03",
+      "query": "东",
+      "category": "基础方向",
+      "response_time_ms": 1.4009475708007812,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:17.396990"
+    },
+    {
+      "test_id": "D04",
+      "query": "西",
+      "category": "基础方向",
+      "response_time_ms": 1.4319419860839844,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:17.398460"
+    },
+    {
+      "test_id": "D05",
+      "query": "东北",
+      "category": "基础方向",
+      "response_time_ms": 8608.631134033203,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:26.007128"
+    },
+    {
+      "test_id": "D06",
+      "query": "东南",
+      "category": "基础方向",
+      "response_time_ms": 7654.984951019287,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:33.662166"
+    },
+    {
+      "test_id": "D07",
+      "query": "西北",
+      "category": "基础方向",
+      "response_time_ms": 4993.490934371948,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:38.655774"
+    },
+    {
+      "test_id": "D08",
+      "query": "西南",
+      "category": "基础方向",
+      "response_time_ms": 7648.270130157471,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:46.304171"
+    },
+    {
+      "test_id": "D09",
+      "query": "上",
+      "category": "基础方向",
+      "response_time_ms": 7646.206855773926,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:11:53.950505"
+    },
+    {
+      "test_id": "D10",
+      "query": "下",
+      "category": "基础方向",
+      "response_time_ms": 7650.02965927124,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:01.600669"
+    },
+    {
+      "test_id": "C01",
+      "query": "红色大楼",
+      "category": "颜色物体",
+      "response_time_ms": 4.832029342651367,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:01.605674"
+    },
+    {
+      "test_id": "C02",
+      "query": "蓝色汽车",
+      "category": "颜色物体",
+      "response_time_ms": 4.574060440063477,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:01.610344"
+    },
+    {
+      "test_id": "C03",
+      "query": "白色建筑物",
+      "category": "颜色物体",
+      "response_time_ms": 2.5141239166259766,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:01.612947"
+    },
+    {
+      "test_id": "C04",
+      "query": "绿色树木",
+      "category": "颜色物体",
+      "response_time_ms": 3.359079360961914,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:01.616390"
+    },
+    {
+      "test_id": "C05",
+      "query": "黑色标志",
+      "category": "颜色物体",
+      "response_time_ms": 3.036975860595703,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:01.619497"
+    },
+    {
+      "test_id": "C06",
+      "query": "灰色墙壁",
+      "category": "颜色物体",
+      "response_time_ms": 2.6590824127197266,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:01.622257"
+    },
+    {
+      "test_id": "C07",
+      "query": "黄色信号灯",
+      "category": "颜色物体",
+      "response_time_ms": 3858.56294631958,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:05.480903"
+    },
+    {
+      "test_id": "C08",
+      "query": "橙色交通锥",
+      "category": "颜色物体",
+      "response_time_ms": 7640.094995498657,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:13.121124"
+    },
+    {
+      "test_id": "C09",
+      "query": "紫色招牌",
+      "category": "颜色物体",
+      "response_time_ms": 7641.1309242248535,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:20.762380"
+    },
+    {
+      "test_id": "C10",
+      "query": "粉色花朵",
+      "category": "颜色物体",
+      "response_time_ms": 6316.73789024353,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:27.079259"
+    },
+    {
+      "test_id": "C11",
+      "query": "棕色木箱",
+      "category": "颜色物体",
+      "response_time_ms": 7631.500005722046,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:34.710882"
+    },
+    {
+      "test_id": "C12",
+      "query": "银色汽车",
+      "category": "颜色物体",
+      "response_time_ms": 7640.8851146698,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:42.351895"
+    },
+    {
+      "test_id": "C13",
+      "query": "金色装饰",
+      "category": "颜色物体",
+      "response_time_ms": 7630.073070526123,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:49.982093"
+    },
+    {
+      "test_id": "C14",
+      "query": "青色门",
+      "category": "颜色物体",
+      "response_time_ms": 7641.973972320557,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:12:57.624194"
+    },
+    {
+      "test_id": "C15",
+      "query": "米色墙面",
+      "category": "颜色物体",
+      "response_time_ms": 7637.825012207031,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.262148"
+    },
+    {
+      "test_id": "L01",
+      "query": "我在红色大楼的北侧",
+      "category": "复合位置",
+      "response_time_ms": 4.314899444580078,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.266665"
+    },
+    {
+      "test_id": "L02",
+      "query": "在绿色树木的东边",
+      "category": "复合位置",
+      "response_time_ms": 3.7779808044433594,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.270500"
+    },
+    {
+      "test_id": "L03",
+      "query": "靠近蓝色标志",
+      "category": "复合位置",
+      "response_time_ms": 2.4602413177490234,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.273039"
+    },
+    {
+      "test_id": "L04",
+      "query": "前方有白色建筑物",
+      "category": "复合位置",
+      "response_time_ms": 2.351999282836914,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.275471"
+    },
+    {
+      "test_id": "L05",
+      "query": "位于十字路口",
+      "category": "复合位置",
+      "response_time_ms": 3.1740665435791016,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.278724"
+    },
+    {
+      "test_id": "L06",
+      "query": "在停车场的入口处",
+      "category": "复合位置",
+      "response_time_ms": 3.0028820037841797,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.281810"
+    },
+    {
+      "test_id": "L07",
+      "query": "靠近加油站的便利店",
+      "category": "复合位置",
+      "response_time_ms": 2.9387474060058594,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.284820"
+    },
+    {
+      "test_id": "L08",
+      "query": "在人行横道的对面",
+      "category": "复合位置",
+      "response_time_ms": 2.4018287658691406,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.287293"
+    },
+    {
+      "test_id": "L09",
+      "query": "东南方向的建筑物",
+      "category": "复合位置",
+      "response_time_ms": 2.318143844604492,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.289664"
+    },
+    {
+      "test_id": "L10",
+      "query": "西北角的标志",
+      "category": "复合位置",
+      "response_time_ms": 2.1278858184814453,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:05.291870"
+    },
+    {
+      "test_id": "L11",
+      "query": "在红色汽车和蓝色卡车之间",
+      "category": "复合位置",
+      "response_time_ms": 7643.300294876099,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:12.935215"
+    },
+    {
+      "test_id": "L12",
+      "query": "靠近白色墙壁的角落",
+      "category": "复合位置",
+      "response_time_ms": 6046.515941619873,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:18.981868"
+    },
+    {
+      "test_id": "L13",
+      "query": "在绿色草坪的南侧",
+      "category": "复合位置",
+      "response_time_ms": 7645.565986633301,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:26.627557"
+    },
+    {
+      "test_id": "L14",
+      "query": "位于灰色大楼的东侧入口",
+      "category": "复合位置",
+      "response_time_ms": 7656.678915023804,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:34.284360"
+    },
+    {
+      "test_id": "L15",
+      "query": "在黑色大门的前面",
+      "category": "复合位置",
+      "response_time_ms": 7659.966945648193,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:41.944464"
+    },
+    {
+      "test_id": "R01",
+      "query": "靠近入口",
+      "category": "相对位置",
+      "response_time_ms": 4.201173782348633,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:41.948839"
+    },
+    {
+      "test_id": "R02",
+      "query": "在对面",
+      "category": "相对位置",
+      "response_time_ms": 4.350900650024414,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:41.953338"
+    },
+    {
+      "test_id": "R03",
+      "query": "旁边",
+      "category": "相对位置",
+      "response_time_ms": 2.482891082763672,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:41.955939"
+    },
+    {
+      "test_id": "R04",
+      "query": "附近",
+      "category": "相对位置",
+      "response_time_ms": 3.342866897583008,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:41.959349"
+    },
+    {
+      "test_id": "R05",
+      "query": "中间位置",
+      "category": "相对位置",
+      "response_time_ms": 3.087759017944336,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:41.962602"
+    },
+    {
+      "test_id": "R06",
+      "query": "在左边",
+      "category": "相对位置",
+      "response_time_ms": 7695.723056793213,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:49.658401"
+    },
+    {
+      "test_id": "R07",
+      "query": "在右边",
+      "category": "相对位置",
+      "response_time_ms": 7699.8419761657715,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:13:57.358409"
+    },
+    {
+      "test_id": "R08",
+      "query": "在前面",
+      "category": "相对位置",
+      "response_time_ms": 7694.866180419922,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:05.053404"
+    },
+    {
+      "test_id": "R09",
+      "query": "在后面",
+      "category": "相对位置",
+      "response_time_ms": 7699.822187423706,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:12.753356"
+    },
+    {
+      "test_id": "R10",
+      "query": "在之间",
+      "category": "相对位置",
+      "response_time_ms": 7697.477102279663,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:20.450961"
+    },
+    {
+      "test_id": "B01",
+      "query": "北",
+      "category": "边界-最短",
+      "response_time_ms": 4.620075225830078,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:20.455790"
+    },
+    {
+      "test_id": "B02",
+      "query": "红",
+      "category": "边界-最短",
+      "response_time_ms": 4.260778427124023,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:20.460148"
+    },
+    {
+      "test_id": "B03",
+      "query": "我在一个非常大的红色建筑物的北侧靠近入口的地方有很多车辆和行人",
+      "category": "边界-最长",
+      "response_time_ms": 7666.35799407959,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:28.126573"
+    },
+    {
+      "test_id": "B04",
+      "query": "红色@大楼#北侧$",
+      "category": "边界-特殊字符",
+      "response_time_ms": 7665.396928787231,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:35.792096"
+    },
+    {
+      "test_id": "B05",
+      "query": "在50米外的红色建筑物旁边100米处",
+      "category": "边界-数字",
+      "response_time_ms": 7669.461965560913,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:43.461684"
+    },
+    {
+      "test_id": "B06",
+      "query": "在red大楼的blue汽车旁边",
+      "category": "边界-中英文",
+      "response_time_ms": 7672.600030899048,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:51.134412"
+    },
+    {
+      "test_id": "B07",
+      "query": "北北北北北北北北北",
+      "category": "边界-重复",
+      "response_time_ms": 6323.031187057495,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:57.457689"
+    },
+    {
+      "test_id": "B08",
+      "query": "在不存在的地方",
+      "category": "边界-无效",
+      "response_time_ms": 3.9529800415039062,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:57.461749"
+    },
+    {
+      "test_id": "B09",
+      "query": "某个地方",
+      "category": "边界-模糊",
+      "response_time_ms": 3.612041473388672,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:14:57.465480"
+    },
+    {
+      "test_id": "B10",
+      "query": "东南西北上下左右前后",
+      "category": "边界-复杂",
+      "response_time_ms": 7661.608934402466,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:05.127173"
+    },
+    {
+      "test_id": "E01",
+      "query": "(空)",
+      "category": "错误处理",
+      "response_time_ms": 0,
+      "status_code": 400,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:05.130985"
+    },
+    {
+      "test_id": "E02",
+      "query": "   ",
+      "category": "错误处理",
+      "response_time_ms": 4.27699089050293,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:05.135440"
+    },
+    {
+      "test_id": "E03",
+      "query": "<script>alert('xss')</script>",
+      "category": "错误处理-XSS",
+      "response_time_ms": 7639.080286026001,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:12.774633"
+    },
+    {
+      "test_id": "E04",
+      "query": "SELECT * FROM table",
+      "category": "错误处理-SQL",
+      "response_time_ms": 7650.622844696045,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:20.425482"
+    },
+    {
+      "test_id": "E05",
+      "query": "'; DROP TABLE users; --",
+      "category": "错误处理-注入",
+      "response_time_ms": 7669.536113739014,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:28.095144"
+    },
+    {
+      "test_id": "P01",
+      "query": "红色大楼北侧",
+      "category": "性能测试",
+      "response_time_ms": 4.377841949462891,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:28.099794"
+    },
+    {
+      "test_id": "P02",
+      "query": "绿色树木东边",
+      "category": "性能测试",
+      "response_time_ms": 4.401206970214844,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:28.104284"
+    },
+    {
+      "test_id": "P03",
+      "query": "蓝色标志附近",
+      "category": "性能测试",
+      "response_time_ms": 3.3528804779052734,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:28.107744"
+    },
+    {
+      "test_id": "P04",
+      "query": "白色建筑物前方",
+      "category": "性能测试",
+      "response_time_ms": 2.9592514038085938,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:28.110786"
+    },
+    {
+      "test_id": "P05",
+      "query": "十字路口东南角",
+      "category": "性能测试",
+      "response_time_ms": 2.440929412841797,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:28.113291"
+    },
+    {
+      "test_id": "P06",
+      "query": "停车场入口",
+      "category": "性能测试",
+      "response_time_ms": 7456.722974777222,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:35.570081"
+    },
+    {
+      "test_id": "P07",
+      "query": "加油站便利店",
+      "category": "性能测试",
+      "response_time_ms": 7661.337852478027,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:43.231562"
+    },
+    {
+      "test_id": "P08",
+      "query": "人行横道对面",
+      "category": "性能测试",
+      "response_time_ms": 7659.744024276733,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:50.891488"
+    },
+    {
+      "test_id": "P09",
+      "query": "建筑物东南方向",
+      "category": "性能测试",
+      "response_time_ms": 7660.786867141724,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:15:58.552405"
+    },
+    {
+      "test_id": "P10",
+      "query": "标志西北角",
+      "category": "性能测试",
+      "response_time_ms": 5909.208059310913,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:16:04.461751"
+    },
+    {
+      "test_id": "T01",
+      "query": "并发查询1-红色大楼",
+      "category": "并发测试",
+      "response_time_ms": 7678.552865982056,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:16:12.140692"
+    },
+    {
+      "test_id": "T03",
+      "query": "并发查询3-绿色树木",
+      "category": "并发测试",
+      "response_time_ms": 13451.932191848755,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:16:17.915356"
+    },
+    {
+      "test_id": "T04",
+      "query": "并发查询4-白色墙壁",
+      "category": "并发测试",
+      "response_time_ms": 17970.072746276855,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:16:22.433995"
+    },
+    {
+      "test_id": "T02",
+      "query": "并发查询2-蓝色汽车",
+      "category": "并发测试",
+      "response_time_ms": 25155.184984207153,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:16:29.618031"
+    },
+    {
+      "test_id": "T05",
+      "query": "并发查询5-黑色大门",
+      "category": "并发测试",
+      "response_time_ms": 32758.736848831177,
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2026-02-03T18:16:37.222913"
+    }
+  ]
+}

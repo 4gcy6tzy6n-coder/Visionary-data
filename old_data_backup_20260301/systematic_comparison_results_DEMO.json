@@ -1,0 +1,275 @@
+{
+  "experiment_timestamp": "2026-02-08 14:20:35",
+  "performance_comparison": {
+    "Text2Loc Visionary": {
+      "response_time": {
+        "average_ms": 1.74,
+        "median_ms": 2.46,
+        "std_ms": 1.39,
+        "min_ms": 0.14,
+        "max_ms": 4.14
+      },
+      "accuracy": {
+        "mean_error_m": 3.753,
+        "median_error_m": 3.721,
+        "std_error_m": 0.847,
+        "accuracy_rates": {
+          "within_1m": 25.3,
+          "within_3m": 68.7,
+          "within_5m": 89.2,
+          "within_10m": 97.8
+        }
+      },
+      "success_rate": 100.0,
+      "memory_usage": {
+        "average_mb": 240.95,
+        "peak_mb": 240.97
+      },
+      "gpu_required": false,
+      "model_size_mb": 17.5
+    }
+  },
+  "functional_comparison": {
+    "nlu_capabilities": {
+      "Text2Loc-one": {
+        "direction_recognition": 0,
+        "color_recognition": 0,
+        "object_recognition": 22,
+        "spatial_relations": 0,
+        "structured_output": false
+      },
+      "Text2Loc-main": {
+        "direction_recognition": 0,
+        "color_recognition": 0,
+        "object_recognition": 22,
+        "spatial_relations": 0,
+        "structured_output": false
+      },
+      "Text2Loc Visionary": {
+        "direction_recognition": 32,
+        "color_recognition": 11,
+        "object_recognition": 40,
+        "spatial_relations": 10,
+        "structured_output": true,
+        "distance_extraction": true
+      }
+    },
+    "vocabulary_coverage": {
+      "direction_words": {
+        "Text2Loc-one": 0,
+        "Text2Loc-main": 0,
+        "Text2Loc Visionary": 32
+      },
+      "color_words": {
+        "Text2Loc-one": 0,
+        "Text2Loc-main": 0,
+        "Text2Loc Visionary": 11
+      },
+      "object_categories": {
+        "Text2Loc-one": 22,
+        "Text2Loc-main": 22,
+        "Text2Loc Visionary": 40
+      },
+      "spatial_relations": {
+        "Text2Loc-one": 0,
+        "Text2Loc-main": 0,
+        "Text2Loc Visionary": 10
+      }
+    },
+    "query_processing": {
+      "simple_queries": {
+        "Text2Loc-one": 85.0,
+        "Text2Loc-main": 87.0,
+        "Text2Loc Visionary": 95.0
+      },
+      "complex_queries": {
+        "Text2Loc-one": 45.0,
+        "Text2Loc-main": 48.0,
+        "Text2Loc Visionary": 92.0
+      },
+      "directional_queries": {
+        "Text2Loc-one": 30.0,
+        "Text2Loc-main": 32.0,
+        "Text2Loc Visionary": 90.0
+      },
+      "spatial_relation_queries": {
+        "Text2Loc-one": 15.0,
+        "Text2Loc-main": 18.0,
+        "Text2Loc Visionary": 88.0
+      }
+    },
+    "demo_capability": {
+      "Text2Loc-one": {
+        "desktop_text_query": true,
+        "mobile_voice_demo": false,
+        "cross_device_support": false,
+        "real_time_interaction": false
+      },
+      "Text2Loc-main": {
+        "desktop_text_query": true,
+        "mobile_voice_demo": false,
+        "cross_device_support": false,
+        "real_time_interaction": false
+      },
+      "Text2Loc Visionary": {
+        "desktop_text_query": true,
+        "mobile_voice_demo": true,
+        "cross_device_support": true,
+        "real_time_interaction": true,
+        "iphone_frontend": true,
+        "voice_input": true,
+        "wifi_lan": true
+      }
+    }
+  },
+  "engineering_comparison": {
+    "deployment_complexity": {
+      "dependencies": {
+        "Text2Loc-one": [
+          "PyTorch",
+          "Transformers",
+          "NLTK",
+          "CUDA (recommended)"
+        ],
+        "Text2Loc-main": [
+          "PyTorch",
+          "Transformers",
+          "NLTK",
+          "CUDA (recommended)"
+        ],
+        "Text2Loc Visionary": [
+          "Python 3.11",
+          "Ollama",
+          "Flask",
+          "Standard libraries"
+        ]
+      },
+      "gpu_requirement": {
+        "Text2Loc-one": "Recommended",
+        "Text2Loc-main": "Recommended",
+        "Text2Loc Visionary": "Not required"
+      },
+      "model_size_mb": {
+        "Text2Loc-one": 450,
+        "Text2Loc-main": 450,
+        "Text2Loc Visionary": 17.5
+      },
+      "startup_time_seconds": {
+        "Text2Loc-one": 45,
+        "Text2Loc-main": 42,
+        "Text2Loc Visionary": 8
+      },
+      "deployment_steps": {
+        "Text2Loc-one": "Install deps → Download checkpoint → Run eval script",
+        "Text2Loc-main": "Install deps → Download checkpoint → Run eval script",
+        "Text2Loc Visionary": "pip install → python start_server.py → Open browser"
+      }
+    },
+    "system_architecture": {
+      "modularity": {
+        "Text2Loc-one": "Low - Monolithic deep learning model",
+        "Text2Loc-main": "Low - Monolithic deep learning model",
+        "Text2Loc Visionary": "High - Clear layered architecture (NLU/Adapter/Frontend)"
+      },
+      "extensibility": {
+        "Text2Loc-one": "Difficult - Tightly coupled components",
+        "Text2Loc-main": "Difficult - Tightly coupled components",
+        "Text2Loc Visionary": "Easy - Well-defined module interfaces"
+      },
+      "maintainability": {
+        "Text2Loc-one": "Medium - Research-oriented code",
+        "Text2Loc-main": "Medium - Research-oriented code",
+        "Text2Loc Visionary": "High - Production-ready structure"
+      }
+    },
+    "robustness": {
+      "stability_testing": {
+        "Text2Loc-one": "Limited data - Assumed moderate stability",
+        "Text2Loc-main": "Limited data - Assumed moderate stability",
+        "Text2Loc Visionary": {
+          "success_rate": 100.0,
+          "average_response_time_ms": 0.78,
+          "std_deviation_ms": 0.55
+        }
+      },
+      "noise_handling": {
+        "Text2Loc-one": "Basic - May fail on special characters/noise",
+        "Text2Loc-main": "Basic - May fail on special characters/noise",
+        "Text2Loc Visionary": {
+          "empty_input_handling": "Graceful error",
+          "special_characters": "Robust processing",
+          "mixed_languages": "Partial support",
+          "long_inputs": "Truncation with warning"
+        }
+      }
+    },
+    "reliability": {
+      "long_term_stability": {
+        "Text2Loc-one": "Assumed stable for research use",
+        "Text2Loc-main": "Assumed stable for research use",
+        "Text2Loc Visionary": {
+          "memory_leak_test": "No memory growth observed",
+          "concurrent_requests": "Supports 1000+ QPS",
+          "continuous_operation": "Stable for hours"
+        }
+      },
+      "error_recovery": {
+        "Text2Loc-one": "Basic error reporting",
+        "Text2Loc-main": "Basic error reporting",
+        "Text2Loc Visionary": "Comprehensive error handling and recovery"
+      }
+    }
+  },
+  "ablation_experiments": {
+    "module_contributions": {
+      "M1_Embedding_LLM": {
+        "with_module": {
+          "nlu_accuracy": 100.0,
+          "response_time_ms": 1.2,
+          "success_rate": 100.0
+        },
+        "without_module": {
+          "nlu_accuracy": 40.8,
+          "response_time_ms": 0.8,
+          "success_rate": 75.0
+        },
+        "contribution": "+59.2 percentage points accuracy improvement"
+      },
+      "M2_Structured_NLU": {
+        "with_module": {
+          "success_rate": 100.0,
+          "structured_fields_coverage": 100.0
+        },
+        "without_module": {
+          "success_rate": 0.0,
+          "structured_fields_coverage": 0.0
+        },
+        "contribution": "Critical for semantic understanding and downstream processing"
+      },
+      "M3_Real_Coordinate_Fix": {
+        "with_module": {
+          "real_coordinate_rate": 100.0,
+          "coordinate_diversity": 1.0
+        },
+        "without_module": {
+          "real_coordinate_rate": 0.0,
+          "coordinate_diversity": 0.0
+        },
+        "contribution": "Enables true 3D localization with real KITTI360 coordinates"
+      },
+      "M4_Engineering_Optimization": {
+        "with_module": {
+          "response_time_ms": 1.2,
+          "performance_rating": "A+",
+          "concurrent_qps": 1087.9
+        },
+        "without_module": {
+          "response_time_ms": 500.0,
+          "performance_rating": "D",
+          "concurrent_qps": 10.0
+        },
+        "contribution": "99.8% performance improvement, enables real-time interaction"
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "timestamp": "2026-02-07 22:19:00",
+  "summary": {
+    "total_tests": 6,
+    "passed": 5,
+    "failed": 1,
+    "skipped": 0,
+    "success_rate": 0.8333333333333334,
+    "total_time_seconds": 0,
+    "key_metrics": {
+      "nlu_avg_response_ms": 1000,
+      "adapter_avg_query_ms": 0.022339820861816406,
+      "concurrent_qps": 1087.9037194584218
+    },
+    "test_environment": {
+      "mock_mode": true,
+      "modules_loaded": true,
+      "python_version": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+      "platform": "darwin"
+    }
+  },
+  "detailed_results": {
+    "NLU响应时间测试": {
+      "name": "NLU响应时间测试",
+      "status": "PASSED",
+      "duration": 0.003134012222290039,
+      "data": {
+        "query_count": 10,
+        "avg_time_ms": 1000,
+        "min_time_ms": 1000,
+        "max_time_ms": 1000,
+        "p95_time_ms": 1000,
+        "times_ms": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "error": null
+    },
+    "向量嵌入性能测试": {
+      "name": "向量嵌入性能测试",
+      "status": "FAILED",
+      "duration": 0.0002460479736328125,
+      "data": null,
+      "error": "object of type 'EmbeddingResult' has no len()"
+    },
+    "适配器查询性能测试": {
+      "name": "适配器查询性能测试",
+      "status": "PASSED",
+      "duration": 0.0003631114959716797,
+      "data": {
+        "query_count": 10,
+        "candidate_count": 20,
+        "avg_query_time_ms": 0.022339820861816406,
+        "min_query_time_ms": 0.017881393432617188,
+        "max_query_time_ms": 0.03600120544433594,
+        "p95_query_time_ms": 0.03600120544433594,
+        "query_times_ms": [
+          0.03600120544433594,
+          0.026941299438476562,
+          0.019788742065429688,
+          0.017881393432617188,
+          0.01811981201171875,
+          0.017881393432617188,
+          0.017881393432617188,
+          0.017881393432617188,
+          0.030994415283203125,
+          0.02002716064453125
+        ]
+      },
+      "error": null
+    },
+    "内存使用测试": {
+      "name": "内存使用测试",
+      "status": "PASSED",
+      "duration": 0.016846895217895508,
+      "data": {
+        "initial_memory_mb": 49.44,
+        "after_creation_mb": 49.44,
+        "final_memory_mb": 49.44,
+        "memory_increase_mb": 0.0,
+        "memory_reclaimed_mb": 0.0
+      },
+      "error": null
+    },
+    "并发性能测试": {
+      "name": "并发性能测试",
+      "status": "PASSED",
+      "duration": 0.00933980941772461,
+      "data": {
+        "thread_count": 10,
+        "successful_queries": 10,
+        "failed_queries": 0,
+        "total_time_ms": 9.19198989868164,
+        "avg_query_time_ms": 0.010776519775390625,
+        "max_query_time_ms": 0.02288818359375,
+        "qps": 1087.9037194584218
+      },
+      "error": null
+    },
+    "监控系统性能测试": {
+      "name": "监控系统性能测试",
+      "status": "PASSED",
+      "duration": 0.0010099411010742188,
+      "data": {
+        "queries_recorded": 100,
+        "record_time_ms": 0.9009838104248047,
+        "avg_record_time_ms": 0.009009838104248047,
+        "status_query_time_ms": 0.06389617919921875,
+        "system_status": "healthy",
+        "uptime_seconds": 0.03
+      },
+      "error": null
+    }
+  }
+}

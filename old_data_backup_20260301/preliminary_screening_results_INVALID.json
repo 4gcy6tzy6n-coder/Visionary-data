@@ -1,0 +1,62 @@
+{
+  "noise_robustness": {
+    "noise_0.0": {
+      "mean_error": 3.6879228402093633,
+      "acc_5m": 76.01410934744268
+    },
+    "noise_0.1": {
+      "mean_error": 3.6879228402093633,
+      "acc_5m": 76.01410934744268
+    },
+    "noise_0.2": {
+      "mean_error": 3.6879228402093633,
+      "acc_5m": 76.01410934744268
+    },
+    "noise_0.3": {
+      "mean_error": 3.6879228402093633,
+      "acc_5m": 76.01410934744268
+    }
+  },
+  "cell_size": {
+    "small": {
+      "count": 480,
+      "text2loc_one_mean_error": 3.6450412430779906,
+      "text2loc_one_acc_5m": 75.0
+    },
+    "medium": {
+      "count": 657,
+      "text2loc_one_mean_error": 3.643019210973647,
+      "text2loc_one_acc_5m": 78.23439878234399
+    }
+  },
+  "description_types": {
+    "directional": {
+      "count": 756,
+      "mean_error": 3.677694430312033,
+      "acc_5m": 76.5873015873016
+    },
+    "distance": {
+      "count": 68,
+      "mean_error": 3.5899976617129217,
+      "acc_5m": 76.47058823529412
+    },
+    "simple": {
+      "count": 1444,
+      "mean_error": 3.699962064138956,
+      "acc_5m": 75.76177285318559
+    }
+  },
+  "computational_efficiency": {
+    "mean_inference_time_ms": 1.691824139925302,
+    "std_inference_time_ms": 0.15251508011229503,
+    "memory_mb": 0.0,
+    "total_params": 4577986,
+    "model_size_mb": 17.46363067626953
+  },
+  "generalization": {
+    "unseen_cell_count": 534,
+    "unseen_pose_count": 2268,
+    "mean_error": 3.6892425268646503,
+    "acc_5m": 76.05820105820106
+  }
+}

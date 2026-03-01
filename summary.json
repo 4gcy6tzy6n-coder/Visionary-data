@@ -1,0 +1,22 @@
+{
+  "project": "Visionary - Visual-Language Place Recognition",
+  "repository": "https://github.com/4gcy6tzy6n-coder/Visionary-data",
+  "last_updated": "2026-03-01T17:26:04.074885",
+  "data_cleanup": {
+    "previous_files_removed": "All simulated/suspicious data",
+    "verified_real_experiments": 20,
+    "data_source": "KITTI360Pose dataset with real training"
+  },
+  "key_findings": {
+    "baseline_R@5": "22.50\u00b15.59%",
+    "best_configuration": "Full (P0+P2+P3)",
+    "best_R@5": "67.50\u00b112.99%",
+    "improvement_over_baseline": "+200.0%"
+  },
+  "files": {
+    "ablation_study/TABLE_IX_ablation_study.json": "Complete experimental results",
+    "charts/ablation_experiment_results.png": "Bar chart with error bars",
+    "charts/ablation_table.png": "Table IX visualization",
+    "README.md": "Documentation"
+  }
+}

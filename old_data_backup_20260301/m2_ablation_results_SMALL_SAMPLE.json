@@ -1,0 +1,81 @@
+{
+  "experiment": "M2结构化NLU消融实验",
+  "timestamp": "2026-02-07 22:18:37",
+  "with_m2": {
+    "mode": "有M2（结构化NLU）",
+    "total": 5,
+    "success": 5,
+    "success_rate": 100.0,
+    "results": [
+      {
+        "query": "在建筑物左侧的树",
+        "success": true,
+        "cell_id": "2013_05_28_drive_0010_sync_0",
+        "x": -0.18,
+        "y": 2.27,
+        "score": 0.6135520159751235
+      },
+      {
+        "query": "红色的汽车",
+        "success": true,
+        "cell_id": "2013_05_28_drive_0007_sync_0",
+        "x": -3.35,
+        "y": -1.79,
+        "score": 0.4499481166562018
+      },
+      {
+        "query": "前方的蓝色标志",
+        "success": true,
+        "cell_id": "2013_05_28_drive_0003_sync_0",
+        "x": 0.13,
+        "y": -6.86,
+        "score": 0.6411501296738777
+      },
+      {
+        "query": "靠近绿色房子",
+        "success": true,
+        "cell_id": "2013_05_28_drive_0007_sync_0",
+        "x": -3.35,
+        "y": -1.79,
+        "score": 0.447708723325315
+      },
+      {
+        "query": "在北面的灰色建筑",
+        "success": true,
+        "cell_id": "2013_05_28_drive_0007_sync_0",
+        "x": -3.35,
+        "y": -1.79,
+        "score": 0.6516242192985647
+      }
+    ]
+  },
+  "without_m2": {
+    "mode": "无M2（结构化NLU）",
+    "total": 5,
+    "success": 0,
+    "success_rate": 0.0,
+    "results": [
+      {
+        "query": "在建筑物左侧的树",
+        "success": false
+      },
+      {
+        "query": "红色的汽车",
+        "success": false
+      },
+      {
+        "query": "前方的蓝色标志",
+        "success": false
+      },
+      {
+        "query": "靠近绿色房子",
+        "success": false
+      },
+      {
+        "query": "在北面的灰色建筑",
+        "success": false
+      }
+    ]
+  },
+  "improvement_percent": 100.0
+}

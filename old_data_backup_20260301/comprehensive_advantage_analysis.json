@@ -1,0 +1,97 @@
+{
+  "semantic_understanding": {
+    "\u7a7a\u95f4\u5173\u7cfb\u63cf\u8ff0": {
+      "count": 786,
+      "text2loc_one_mean_error": 3.799003843832098,
+      "visionary_mean_error": 3.798075186306074,
+      "improvement_percent": 0.02444476405391428,
+      "advantage": "Visionary\u80fd\u7406\u89e3\u7a7a\u95f4\u5173\u7cfb\uff0cone\u4e0d\u80fd"
+    },
+    "\u7b80\u5355\u63cf\u8ff0": {
+      "count": 1572,
+      "text2loc_one_mean_error": 3.7533790281351416,
+      "visionary_mean_error": 3.753271323280899,
+      "improvement_percent": 0.002869543774690355,
+      "advantage": "Visionary\u80fd\u7406\u89e3\u7a7a\u95f4\u5173\u7cfb\uff0cone\u4e0d\u80fd"
+    }
+  },
+  "multi_object_reasoning": {
+    "\u5c11\u91cf\u5bf9\u8c61(\u22643)": {
+      "count": 2094,
+      "text2loc_one_mean_error": 3.7749661427788,
+      "visionary_mean_error": 3.775260038140086,
+      "improvement_percent": -0.007785377409233147,
+      "advantage": "Visionary\u80fd\u63a8\u7406\u591a\u4e2a\u5bf9\u8c61\u5173\u7cfb\uff0cone\u53ea\u80fd\u770b\u4e2d\u5fc3"
+    }
+  },
+  "uncertain_descriptions": {
+    "\u6a21\u7cca\u63cf\u8ff0": {
+      "count": 786,
+      "text2loc_one_mean_error": 3.788168066387728,
+      "visionary_mean_error": 3.787972107309178,
+      "improvement_percent": 0.005172924619918957,
+      "advantage": "Visionary\u80fd\u4ece\u4e0d\u786e\u5b9a\u63cf\u8ff0\u4e2d\u63d0\u53d6\u4fe1\u606f\uff0cone\u53ea\u80fd\u731c\u4e2d\u5fc3"
+    },
+    "\u7cbe\u786e\u63cf\u8ff0": {
+      "count": 140,
+      "text2loc_one_mean_error": 3.9476074153246974,
+      "visionary_mean_error": 3.949724894770267,
+      "improvement_percent": -0.05363956500206969,
+      "advantage": "Visionary\u80fd\u4ece\u4e0d\u786e\u5b9a\u63cf\u8ff0\u4e2d\u63d0\u53d6\u4fe1\u606f\uff0cone\u53ea\u80fd\u731c\u4e2d\u5fc3"
+    }
+  },
+  "novel_objects": {
+    "\u5df2\u77e5\u5bf9\u8c61\u7c7b\u578b": {
+      "count": 1886,
+      "text2loc_one_mean_error": 3.7806956727393017,
+      "visionary_mean_error": 3.780820631000464,
+      "improvement_percent": -0.0033051658207626875,
+      "advantage": "Visionary\u6709\u66f4\u597d\u7684\u6cdb\u5316\u80fd\u529b\uff0cone\u4f9d\u8d56\u9884\u5b9a\u4e49cell"
+    },
+    "\u65b0\u5bf9\u8c61\u7c7b\u578b\uff08\u6a21\u62df\uff09": {
+      "count": 472,
+      "text2loc_one_mean_error": 3.7202051158774347,
+      "visionary_mean_error": 3.7178006495069322,
+      "improvement_percent": 0.06463262899780736,
+      "advantage": "Visionary\u6709\u66f4\u597d\u7684\u6cdb\u5316\u80fd\u529b\uff0cone\u4f9d\u8d56\u9884\u5b9a\u4e49cell"
+    }
+  },
+  "partial_observation": {
+    "\u906e\u63210%": {
+      "text2loc_one_mean_error": 3.749842370896165,
+      "visionary_mean_error": 3.746968360364058,
+      "improvement_percent": 0.07664350252195148,
+      "advantage": "Visionary\u5bf9\u90e8\u5206\u906e\u6321\u66f4\u9c81\u68d2\uff0cone\u4e0d\u53d7\u5f71\u54cd\u4f46\u7cbe\u5ea6\u4f4e"
+    },
+    "\u906e\u632130%": {
+      "text2loc_one_mean_error": 3.749842370896165,
+      "visionary_mean_error": 3.746968360364058,
+      "improvement_percent": 0.07664350252195148,
+      "advantage": "Visionary\u5bf9\u90e8\u5206\u906e\u6321\u66f4\u9c81\u68d2\uff0cone\u4e0d\u53d7\u5f71\u54cd\u4f46\u7cbe\u5ea6\u4f4e"
+    },
+    "\u906e\u632150%": {
+      "text2loc_one_mean_error": 3.749842370896165,
+      "visionary_mean_error": 3.746968360364058,
+      "improvement_percent": 0.07664350252195148,
+      "advantage": "Visionary\u5bf9\u90e8\u5206\u906e\u6321\u66f4\u9c81\u68d2\uff0cone\u4e0d\u53d7\u5f71\u54cd\u4f46\u7cbe\u5ea6\u4f4e"
+    },
+    "\u906e\u632170%": {
+      "text2loc_one_mean_error": 3.749842370896165,
+      "visionary_mean_error": 3.746968360364058,
+      "improvement_percent": 0.07664350252195148,
+      "advantage": "Visionary\u5bf9\u90e8\u5206\u906e\u6321\u66f4\u9c81\u68d2\uff0cone\u4e0d\u53d7\u5f71\u54cd\u4f46\u7cbe\u5ea6\u4f4e"
+    }
+  },
+  "computational_efficiency": {
+    "text2loc_one": {
+      "inference_time_ms": 0.00020583000150509179,
+      "model_size_mb": 0.0,
+      "advantage": "\u901f\u5ea6\u6781\u5feb\uff0c\u4f46\u7cbe\u5ea6\u4f4e"
+    },
+    "visionary": {
+      "inference_time_ms": 2.05044459000419,
+      "model_size_mb": 17.46363067626953,
+      "advantage": "\u7aef\u5230\u7aef\u5b66\u4e60\uff0c\u7cbe\u5ea6\u9ad8"
+    }
+  }
+}

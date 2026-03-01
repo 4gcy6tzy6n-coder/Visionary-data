@@ -1,0 +1,35 @@
+{
+  "offset_stats": {
+    "mean_x": 0.018157501259344247,
+    "std_x": 4.554527495802243,
+    "mean_y": 0.005510173600371215,
+    "std_y": 4.589626153997618
+  },
+  "center_prediction_performance": {
+    "mean_error": 6.039506655100577,
+    "median_error": 6.06729921805652,
+    "rmse": 6.465968527633173,
+    "accuracy_1m": 0.0,
+    "accuracy_2m": 0.0,
+    "accuracy_5m": 37.019999999999996
+  },
+  "training_analysis": {
+    "final_train_loss": 1.000051048664695,
+    "final_val_loss": 1.0014700315962763,
+    "best_val_loss": 1.001435240608024,
+    "train_loss_change_pct": 0.47660931055899064,
+    "converged": false
+  },
+  "issues": [
+    "\u9a8c\u8bc1\u635f\u5931\u8fc7\u9ad8(>0.9)\uff0c\u6a21\u578b\u53ef\u80fd\u6ca1\u6709\u6536\u655b",
+    "\u8bad\u7ec3\u635f\u5931\u53d8\u5316\u5c0f\u4e8e10%\uff0c\u6a21\u578b\u53ef\u80fd\u6ca1\u6709\u5b66\u5230\u6709\u6548\u7279\u5f81"
+  ],
+  "suggestions": [
+    "\u589e\u52a0\u6a21\u578b\u590d\u6742\u5ea6\u6216\u8bad\u7ec3\u8f6e\u6570",
+    "\u8c03\u6574\u5b66\u4e60\u7387\u8c03\u5ea6\u7b56\u7565",
+    "\u4f7f\u7528\u9884\u8bad\u7ec3\u6587\u672c\u5d4c\u5165\u800c\u975e\u968f\u673a\u521d\u59cb\u5316",
+    "\u4f7f\u7528\u771f\u5b9e\u6587\u672c\u5d4c\u5165\u6a21\u578b(\u5982BERT)\u800c\u975e\u968f\u673a\u54c8\u5e0c",
+    "\u589e\u52a0\u6a21\u578b\u76d1\u7763\u4fe1\u53f7\uff0c\u5982\u8f85\u52a9\u4efb\u52a1",
+    "\u5c1d\u8bd5\u4e0d\u540c\u7684\u635f\u5931\u51fd\u6570\uff0c\u5982Huber Loss"
+  ]
+}

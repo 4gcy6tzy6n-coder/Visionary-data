@@ -1,0 +1,200 @@
+{
+  "ablation": {
+    "full_model": {
+      "mean_error": 13.533569661541629,
+      "median_error": 13.551161137935392,
+      "rmse": 14.396690623465712,
+      "accuracy_5m": 0.7000000000000001,
+      "accuracy_10m": 28.7,
+      "accuracy_15m": 58.550000000000004,
+      "std_error": 4.909907649231862
+    },
+    "no_object": {
+      "mean_error": 14.122216778697537,
+      "median_error": 14.020777643617752,
+      "rmse": 15.238660215160737,
+      "accuracy_5m": 5.800000000000001,
+      "accuracy_10m": 25.4,
+      "accuracy_15m": 55.60000000000001,
+      "std_error": 5.7253609850031735
+    },
+    "no_layernorm": {
+      "mean_error": 13.544563491945791,
+      "median_error": 13.666700809451395,
+      "rmse": 14.41269112099082,
+      "accuracy_5m": 1.4500000000000002,
+      "accuracy_10m": 29.099999999999998,
+      "accuracy_15m": 58.4,
+      "std_error": 4.926506385029535
+    },
+    "shallow": {
+      "mean_error": 14.212677992631368,
+      "median_error": 14.17242533561608,
+      "rmse": 15.434384853356963,
+      "accuracy_5m": 6.25,
+      "accuracy_10m": 25.95,
+      "accuracy_15m": 55.35,
+      "std_error": 6.018307077518301
+    },
+    "baseline": {
+      "mean_error": 27.241180222792938,
+      "median_error": 28.141259713484047,
+      "rmse": 28.913824119038743,
+      "accuracy_5m": 0.35000000000000003,
+      "accuracy_10m": 4.3999999999999995,
+      "accuracy_15m": 12.15,
+      "std_error": 9.691611076390839
+    }
+  },
+  "robustness": {
+    "distance_ranges": {
+      "near": {
+        "mean_error": 7.477197006417123,
+        "median_error": 7.453731307973162,
+        "rmse": 7.620820978691153,
+        "accuracy_5m": 2.4263431542461005,
+        "accuracy_10m": 98.09358752166378,
+        "accuracy_15m": 100.0,
+        "std_error": 1.4725614813942383,
+        "sample_count": 577
+      },
+      "medium": {
+        "mean_error": 14.990067274092688,
+        "median_error": 14.99932176187409,
+        "rmse": 15.268074725987889,
+        "accuracy_5m": 0.0,
+        "accuracy_10m": 0.6739679865206403,
+        "accuracy_15m": 50.042122999157534,
+        "std_error": 2.900342903266016,
+        "sample_count": 1187
+      },
+      "far": {
+        "mean_error": 21.01519828827355,
+        "median_error": 20.95334458040728,
+        "rmse": 21.023854463729133,
+        "accuracy_5m": 0.0,
+        "accuracy_10m": 0.0,
+        "accuracy_15m": 0.0,
+        "std_error": 0.6032391040108319,
+        "sample_count": 236
+      }
+    },
+    "cell_sizes": {
+      "30m": {
+        "mean_error": 13.849440680548263,
+        "median_error": 13.819602154169353,
+        "rmse": 14.708897277721855,
+        "accuracy_5m": 0.0,
+        "accuracy_10m": 26.0,
+        "accuracy_15m": 55.800000000000004,
+        "std_error": 4.954255944392477
+      },
+      "50m": {
+        "mean_error": 13.8503601552545,
+        "median_error": 13.86397115548391,
+        "rmse": 14.71219207076275,
+        "accuracy_5m": 0.4,
+        "accuracy_10m": 26.0,
+        "accuracy_15m": 55.800000000000004,
+        "std_error": 4.9614634027424795
+      },
+      "70m": {
+        "mean_error": 13.851740394069596,
+        "median_error": 13.879788274492942,
+        "rmse": 14.71621537724914,
+        "accuracy_5m": 0.4,
+        "accuracy_10m": 25.8,
+        "accuracy_15m": 56.00000000000001,
+        "std_error": 4.969535499911904
+      },
+      "100m": {
+        "mean_error": 13.85467534642385,
+        "median_error": 13.783363590108141,
+        "rmse": 14.723614962088153,
+        "accuracy_5m": 0.6,
+        "accuracy_10m": 26.8,
+        "accuracy_15m": 56.00000000000001,
+        "std_error": 4.983252812874462
+      }
+    },
+    "description_length": {
+      "short": {
+        "mean_error": 13.533569661541629,
+        "median_error": 13.551161137935392,
+        "rmse": 14.396690623465712,
+        "accuracy_5m": 0.7000000000000001,
+        "accuracy_10m": 28.7,
+        "accuracy_15m": 58.550000000000004,
+        "std_error": 4.909907649231862,
+        "sample_count": 2000
+      }
+    },
+    "noise_robustness": {
+      "noise_0.0": {
+        "mean_error": 13.8503601552545,
+        "median_error": 13.86397115548391,
+        "rmse": 14.71219207076275,
+        "accuracy_5m": 0.4,
+        "accuracy_10m": 26.0,
+        "accuracy_15m": 55.800000000000004,
+        "std_error": 4.9614634027424795
+      },
+      "noise_0.1": {
+        "mean_error": 13.850360176285799,
+        "median_error": 13.863970411881626,
+        "rmse": 14.712192095699248,
+        "accuracy_5m": 0.4,
+        "accuracy_10m": 26.0,
+        "accuracy_15m": 55.800000000000004,
+        "std_error": 4.961463417975776
+      },
+      "noise_0.2": {
+        "mean_error": 13.85035987470937,
+        "median_error": 13.863974449216165,
+        "rmse": 14.712191719374177,
+        "accuracy_5m": 0.4,
+        "accuracy_10m": 26.0,
+        "accuracy_15m": 55.800000000000004,
+        "std_error": 4.961463143938761
+      },
+      "noise_0.3": {
+        "mean_error": 13.850360195046637,
+        "median_error": 13.863962711178317,
+        "rmse": 14.712192165434784,
+        "accuracy_5m": 0.4,
+        "accuracy_10m": 26.0,
+        "accuracy_15m": 55.800000000000004,
+        "std_error": 4.961463572389533
+      },
+      "noise_0.5": {
+        "mean_error": 13.85036080210413,
+        "median_error": 13.863973736710552,
+        "rmse": 14.712192572938068,
+        "accuracy_5m": 0.4,
+        "accuracy_10m": 26.0,
+        "accuracy_15m": 55.800000000000004,
+        "std_error": 4.961463086101876
+      }
+    }
+  },
+  "efficiency": {
+    "Visionary Enhanced": {
+      "params": 13211138,
+      "size_mb": 50.39649200439453,
+      "inference_ms": 0.8360095303214621,
+      "fps": 1196.1586127080159
+    },
+    "Visionary Shallow": {
+      "params": 3163394,
+      "size_mb": 12.067390441894531,
+      "inference_ms": 0.35369548000744544,
+      "fps": 2827.290866083303
+    },
+    "Visionary Baseline": {
+      "params": 527618,
+      "size_mb": 2.0127029418945312,
+      "inference_ms": 0.3460713100503199,
+      "fps": 2889.577872995588
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "data_analysis": {
+    "num_cells": 2674,
+    "num_poses": 11679,
+    "cell_size_mean": 5.487241278896535,
+    "distance_to_center_mean": 3.764829817954856,
+    "desc_length_mean": 15.74492679167737
+  },
+  "model_analysis": {
+    "pred_offset_mean_x": -0.4331592917442322,
+    "pred_offset_std_x": 2.9802322387695312e-08,
+    "pred_offset_mean_y": 0.1107001006603241,
+    "pred_offset_std_y": 0.0,
+    "correlation_x": NaN,
+    "correlation_y": NaN,
+    "near_zero_ratio": 0.0
+  },
+  "root_causes": [
+    {
+      "issue": "\u6570\u636e\u89c4\u6a21\u4e0d\u8db3",
+      "severity": "\u9ad8",
+      "details": "\u53ea\u67092674\u4e2acell\uff0c\u4e0d\u8db3\u4ee5\u8bad\u7ec3\u590d\u6742\u795e\u7ecf\u7f51\u7edc",
+      "solution": "\u9700\u8981\u66f4\u591a\u6570\u636e\u6216\u6570\u636e\u589e\u5f3a"
+    },
+    {
+      "issue": "Cell\u5212\u5206\u8fc7\u7ec6",
+      "severity": "\u9ad8",
+      "details": "\u5e73\u5747cell\u5927\u5c0f\u53ea\u67095.5m\uff0c\u4e2d\u5fc3\u70b9\u9884\u6d4b\u5df2\u8db3\u591f\u597d",
+      "solution": "\u589e\u5927cell size\u6216\u6d4b\u8bd5\u8de8cell\u5b9a\u4f4d"
+    },
+    {
+      "issue": "\u63cf\u8ff0\u8fc7\u4e8e\u7b80\u5355",
+      "severity": "\u9ad8",
+      "details": "\u5e73\u5747\u63cf\u8ff0\u957f\u5ea6\u53ea\u670915.7\u5b57\u7b26",
+      "solution": "\u751f\u6210\u66f4\u4e30\u5bcc\u7684\u63cf\u8ff0"
+    }
+  ],
+  "solutions": [
+    {
+      "priority": 1,
+      "action": "\u91cd\u65b0\u751f\u6210\u8bad\u7ec3\u6570\u636e",
+      "details": "\u751f\u6210\u66f4\u5927cell size\uff0820m+\uff09\u548c\u66f4\u4e30\u5bcc\u63cf\u8ff0\u7684\u6570\u636e",
+      "effort": "\u4e2d\u7b49",
+      "impact": "\u9ad8"
+    },
+    {
+      "priority": 2,
+      "action": "\u4fee\u6539\u635f\u5931\u51fd\u6570",
+      "details": "\u589e\u52a0\u5bf9\u8fb9\u7f18\u4f4d\u7f6e\u7684\u60e9\u7f5a\uff0c\u907f\u514d\u9884\u6d4b\u603b\u662f\u63a5\u8fd10",
+      "effort": "\u4f4e",
+      "impact": "\u4e2d"
+    },
+    {
+      "priority": 3,
+      "action": "\u8bbe\u8ba1\u8de8cell\u6d4b\u8bd5",
+      "details": "\u6d4b\u8bd5\u63cf\u8ff0\u4e0ecell\u4e0d\u5339\u914d\u65f6\u7684\u5b9a\u4f4d\u80fd\u529b",
+      "effort": "\u4f4e",
+      "impact": "\u9ad8"
+    },
+    {
+      "priority": 4,
+      "action": "\u589e\u52a0\u6a21\u578b\u590d\u6742\u5ea6",
+      "details": "\u4f7f\u7528\u66f4\u5927\u7684\u6a21\u578b\u6216\u66f4\u590d\u6742\u7684\u67b6\u6784",
+      "effort": "\u4e2d\u7b49",
+      "impact": "\u4e2d"
+    },
+    {
+      "priority": 5,
+      "action": "\u6570\u636e\u589e\u5f3a",
+      "details": "\u5bf9\u73b0\u6709\u6570\u636e\u8fdb\u884c\u65cb\u8f6c\u3001\u7f29\u653e\u7b49\u589e\u5f3a",
+      "effort": "\u4f4e",
+      "impact": "\u4e2d"
+    }
+  ]
+}

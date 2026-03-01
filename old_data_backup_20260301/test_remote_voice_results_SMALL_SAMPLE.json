@@ -1,0 +1,94 @@
+{
+  "test_type": "远程语音API端到端测试",
+  "timestamp": "2026-02-05T19:40:40.879610",
+  "total_queries": 5,
+  "successful": 5,
+  "success_rate": 100.0,
+  "results": [
+    {
+      "query": "红色的汽车",
+      "success": true,
+      "nlu": {},
+      "location": {
+        "cell_id": "cell_004",
+        "confidence": 0.4519065262574982,
+        "description": "red色car的none侧",
+        "method": "enhanced_nlu",
+        "rank": 1,
+        "reference_objects": [],
+        "score": 0.4519065262574982,
+        "x": 0.0,
+        "y": 0.0
+      },
+      "time_ms": 11.114120483398438
+    },
+    {
+      "query": "在建筑物左侧的树",
+      "success": true,
+      "nlu": {},
+      "location": {
+        "cell_id": "cell_003",
+        "confidence": 0.607403460120599,
+        "description": "none色building的west侧",
+        "method": "enhanced_nlu",
+        "rank": 1,
+        "reference_objects": [],
+        "score": 0.607403460120599,
+        "x": 0.0,
+        "y": 0.0
+      },
+      "time_ms": 2.7709007263183594
+    },
+    {
+      "query": "前方的蓝色标志",
+      "success": true,
+      "nlu": {},
+      "location": {
+        "cell_id": "cell_004",
+        "confidence": 0.6461303287469461,
+        "description": "blue色sign的front侧",
+        "method": "enhanced_nlu",
+        "rank": 1,
+        "reference_objects": [],
+        "score": 0.6461303287469461,
+        "x": 0.0,
+        "y": 0.0
+      },
+      "time_ms": 6.036996841430664
+    },
+    {
+      "query": "靠近绿色房子",
+      "success": true,
+      "nlu": {},
+      "location": {
+        "cell_id": "cell_000",
+        "confidence": 0.4501299655901175,
+        "description": "green色building的none侧",
+        "method": "enhanced_nlu",
+        "rank": 1,
+        "reference_objects": [],
+        "score": 0.4501299655901175,
+        "x": 0.0,
+        "y": 0.0
+      },
+      "time_ms": 5.99217414855957
+    },
+    {
+      "query": "在北面的灰色建筑",
+      "success": true,
+      "nlu": {},
+      "location": {
+        "cell_id": "cell_008",
+        "confidence": 0.6464878561440832,
+        "description": "gray色building的north侧",
+        "method": "enhanced_nlu",
+        "rank": 1,
+        "reference_objects": [],
+        "score": 0.6464878561440832,
+        "x": 0.0,
+        "y": 0.0
+      },
+      "time_ms": 6.426095962524414
+    }
+  ]
+}

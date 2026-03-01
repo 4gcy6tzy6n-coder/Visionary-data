@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-02-04 21:26:00",
+  "summary": {
+    "total": 14,
+    "passed": 4,
+    "failed": 10,
+    "warnings": 0,
+    "pass_rate": 28.6
+  },
+  "details": [
+    {
+      "name": "API健康检查",
+      "status": "✅ PASS",
+      "message": "响应: {'port': 8080, 'service': 'text2loc-visionary', 'status': 'healthy', 'version': '1.0.0'}"
+    },
+    {
+      "name": "获取模型配置",
+      "status": "✅ PASS",
+      "message": "提供商: ollama, 模型: qwen3-vl:4b, 配置状态: 已配置"
+    },
+    {
+      "name": "颜色+对象识别",
+      "status": "❌ FAIL",
+      "message": "查询: '找到红色的汽车'\n    ✗ 不匹配: 颜色(期望:红, 实际:none), 对象(期望:car, 实际:none)\n    解析时间: 11822ms"
+    },
+    {
+      "name": "方向+对象识别",
+      "status": "❌ FAIL",
+      "message": "查询: '在建筑物左侧的树'\n    ✗ 不匹配: 方向(期望:左, 实际:west), 对象(期望:vegetation, 实际:tree)\n    解析时间: 8091ms"
+    },
+    {
+      "name": "方向+距离+颜色+对象",
+      "status": "❌ FAIL",
+      "message": "查询: '前方10米处的蓝色标志牌'\n    ✗ 不匹配: 颜色(期望:蓝, 实际:none), 方向(期望:前, 实际:none), 对象(期望:sign, 实际:none)\n    解析时间: 9050ms"
+    },
+    {
+      "name": "复合对象识别",
+      "status": "❌ FAIL",
+      "message": "查询: '停车场入口'\n    ✗ 不匹配: 对象(期望:parking, 实际:none)\n    解析时间: 9081ms"
+    },
+    {
+      "name": "颜色+建筑物",
+      "status": "❌ FAIL",
+      "message": "查询: '白色建筑物'\n    ✓ 匹配: 对象:building\n    ✗ 不匹配: 颜色(期望:白, 实际:white)\n    解析时间: 6738ms"
+    },
+    {
+      "name": "检索结果数量",
+      "status": "❌ FAIL",
+      "message": "返回 0 个结果"
+    },
+    {
+      "name": "适配器匹配 - direction",
+      "status": "❌ FAIL",
+      "message": "查询: '在建筑物左侧', 期望: 左, 实际: none"
+    },
+    {
+      "name": "适配器匹配 - color",
+      "status": "❌ FAIL",
+      "message": "查询: '红色的标志', 期望: 红, 实际: red"
+    },
+    {
+      "name": "适配器匹配 - object",
+      "status": "❌ FAIL",
+      "message": "查询: '停车场', 期望: parking, 实际: none"
+    },
+    {
+      "name": "响应完整性",
+      "status": "❌ FAIL",
+      "message": "包含字段: query=False, analysis=True, results=True, time=True"
+    },
+    {
+      "name": "响应时间",
+      "status": "✅ PASS",
+      "message": "总耗时: 8535ms (目标 < 10s)"
+    },
+    {
+      "name": "交互式模式 - 初次查询",
+      "status": "✅ PASS",
+      "message": "需要澄清: False, 会话ID: sess_1770211552211"
+    }
+  ]
+}

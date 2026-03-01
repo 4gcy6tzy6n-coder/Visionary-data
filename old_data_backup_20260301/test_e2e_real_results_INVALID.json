@@ -1,0 +1,109 @@
+{
+  "test_type": "端到端真实系统测试",
+  "timestamp": "2026-02-04 21:57:57",
+  "total_queries": 5,
+  "successful": 5,
+  "success_rate": 100.0,
+  "results": [
+    {
+      "query": "在建筑物左侧的树",
+      "success": true,
+      "nlu": {
+        "direction": "west",
+        "color": "none",
+        "object": "building",
+        "confidence": 0.8,
+        "time_ms": 0.01811981201171875
+      },
+      "location": {
+        "results": 3,
+        "top_confidence": 0.6134874458330914,
+        "top_position": [
+          0.0,
+          0.0
+        ],
+        "time_ms": 0.07486343383789062
+      }
+    },
+    {
+      "query": "红色的汽车",
+      "success": true,
+      "nlu": {
+        "direction": "none",
+        "color": "red",
+        "object": "car",
+        "confidence": 0.8,
+        "time_ms": 0.0171661376953125
+      },
+      "location": {
+        "results": 3,
+        "top_confidence": 0.4474940636879529,
+        "top_position": [
+          0.0,
+          0.0
+        ],
+        "time_ms": 4.1332244873046875
+      }
+    },
+    {
+      "query": "前方的蓝色标志",
+      "success": true,
+      "nlu": {
+        "direction": "front",
+        "color": "blue",
+        "object": "sign",
+        "confidence": 0.9,
+        "time_ms": 0.016689300537109375
+      },
+      "location": {
+        "results": 3,
+        "top_confidence": 0.6521691362372732,
+        "top_position": [
+          0.0,
+          0.0
+        ],
+        "time_ms": 3.1299591064453125
+      }
+    },
+    {
+      "query": "靠近绿色房子",
+      "success": true,
+      "nlu": {
+        "direction": "none",
+        "color": "green",
+        "object": "building",
+        "confidence": 0.8,
+        "time_ms": 0.0171661376953125
+      },
+      "location": {
+        "results": 3,
+        "top_confidence": 0.4511539775494487,
+        "top_position": [
+          0.0,
+          0.0
+        ],
+        "time_ms": 3.2939910888671875
+      }
+    },
+    {
+      "query": "在北面的灰色建筑",
+      "success": true,
+      "nlu": {
+        "direction": "north",
+        "color": "gray",
+        "object": "building",
+        "confidence": 0.9,
+        "time_ms": 0.016927719116210938
+      },
+      "location": {
+        "results": 3,
+        "top_confidence": 0.6514561103614513,
+        "top_position": [
+          0.0,
+          0.0
+        ],
+        "time_ms": 3.2477378845214844
+      }
+    }
+  ]
+}
