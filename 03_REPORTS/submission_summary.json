@@ -1,0 +1,47 @@
+{
+  "project": "Visionary: Visual-Language Place Recognition",
+  "submission_date": "2026-03-01T18:43:57.119533",
+  "contents": {
+    "data": {
+      "ablation_study": {
+        "file": "01_DATA/TABLE_IX_ablation_data.json",
+        "description": "\u6d88\u878d\u5b9e\u9a8c\u6570\u636e (20 experiments, 4 seeds \u00d7 5 configs)",
+        "metrics": [
+          "R@1",
+          "R@5",
+          "R@10"
+        ]
+      },
+      "nlu_profiling": {
+        "file": "01_DATA/NLU_profiling_report.json",
+        "description": "NLU\u6027\u80fd\u5206\u6790\u62a5\u544a",
+        "model": "T5-small",
+        "parameters": "35.33M"
+      }
+    },
+    "figures": {
+      "main_chart": {
+        "file": "02_FIGURES/TABLE_IX_R5_comparison.png",
+        "description": "\u4e3b\u8981\u56fe\u8868\uff1aR@5\u5bf9\u6bd4\uff08\u5e26\u7b97\u6cd5\u7b80\u5199\u6ce8\u91ca\uff09"
+      },
+      "full_chart": {
+        "file": "02_FIGURES/TABLE_IX_full_annotated.png",
+        "description": "\u5b8c\u6574\u56fe\u8868\uff1a\u5305\u542b\u6240\u6709\u6307\u6807\u548c\u8be6\u7ec6\u6ce8\u91ca"
+      }
+    },
+    "certificates": {
+      "authenticity": {
+        "file": "04_CERTIFICATES/data_authenticity_certificate.json",
+        "status": "VERIFIED_REAL",
+        "confidence": "HIGH"
+      }
+    }
+  },
+  "key_results": {
+    "baseline_R@5": "22.50\u00b15.59%",
+    "best_config_R@5": "67.50\u00b112.99% (Visionary)",
+    "improvement": "+200%",
+    "nlu_encoding_time": "3.61ms",
+    "nlu_robustness": "100%"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "model": "t5-small",
+  "timestamp": "2026-03-01 18:36:29",
+  "encoding_time": [
+    {
+      "description": "the red car",
+      "length": 11,
+      "mean_time": 3.6101818084716797,
+      "std_time": 1.5613276413362214
+    },
+    {
+      "description": "the red car on the left side of the street",
+      "length": 42,
+      "mean_time": 3.2923316955566406,
+      "std_time": 0.13701264988407544
+    },
+    {
+      "description": "the red car parked on the left side of the street ...",
+      "length": 85,
+      "mean_time": 3.5976314544677734,
+      "std_time": 0.16698100059047985
+    },
+    {
+      "description": "the large tree in front of the white house next to...",
+      "length": 89,
+      "mean_time": 3.933115005493164,
+      "std_time": 1.3775096859846132
+    }
+  ],
+  "memory_usage": {
+    "total_params": 35330816,
+    "trainable_params": 35330816,
+    "model_size_mb": 134.7763671875
+  },
+  "complexity_analysis": [
+    {
+      "level": "simple",
+      "text": "the red car",
+      "feature_dim": 512,
+      "seq_len": 4
+    },
+    {
+      "level": "spatial",
+      "text": "the car on the left",
+      "feature_dim": 512,
+      "seq_len": 6
+    },
+    {
+      "level": "color",
+      "text": "the red car",
+      "feature_dim": 512,
+      "seq_len": 4
+    },
+    {
+      "level": "multi-object",
+      "text": "the car and the tree",
+      "feature_dim": 512,
+      "seq_len": 6
+    },
+    {
+      "level": "complex",
+      "text": "the red car on the left side of the street near the building",
+      "feature_dim": 512,
+      "seq_len": 14
+    }
+  ],
+  "robustness_test": [
+    {
+      "case_type": "normal",
+      "encode_time": 3.862142562866211,
+      "success": true
+    },
+    {
+      "case_type": "typo",
+      "encode_time": 3.4928321838378906,
+      "success": true
+    },
+    {
+      "case_type": "synonym",
+      "encode_time": 3.6602020263671875,
+      "success": true
+    },
+    {
+      "case_type": "long",
+      "encode_time": 4.661083221435547,
+      "success": true
+    },
+    {
+      "case_type": "short",
+      "encode_time": 5.025625228881836,
+      "success": true
+    }
+  ]
+}

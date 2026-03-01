@@ -1,0 +1,246 @@
+{
+  "completed": 20,
+  "total": 20,
+  "results": [
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 0.0,
+        "R@5": 25.0,
+        "R@10": 50.0
+      },
+      "time": 136.28421998023987,
+      "config": "baseline",
+      "description": "Baseline",
+      "seed": 1001
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 5.0,
+        "R@5": 20.0,
+        "R@10": 45.0
+      },
+      "time": 141.34689021110535,
+      "config": "baseline",
+      "description": "Baseline",
+      "seed": 1002
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 0.0,
+        "R@5": 15.0,
+        "R@10": 45.0
+      },
+      "time": 140.001070022583,
+      "config": "baseline",
+      "description": "Baseline",
+      "seed": 1003
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 5.0,
+        "R@5": 30.0,
+        "R@10": 60.0
+      },
+      "time": 137.70972800254822,
+      "config": "baseline",
+      "description": "Baseline",
+      "seed": 1004
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 10.0,
+        "R@5": 50.0,
+        "R@10": 75.0
+      },
+      "time": 137.94028997421265,
+      "config": "p0_tcg",
+      "description": "P0 TCG",
+      "seed": 2001
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 10.0,
+        "R@5": 40.0,
+        "R@10": 80.0
+      },
+      "time": 140.1495132446289,
+      "config": "p0_tcg",
+      "description": "P0 TCG",
+      "seed": 2002
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 15.0,
+        "R@5": 50.0,
+        "R@10": 85.0
+      },
+      "time": 139.97840523719788,
+      "config": "p0_tcg",
+      "description": "P0 TCG",
+      "seed": 2003
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 0.0,
+        "R@5": 40.0,
+        "R@10": 70.0
+      },
+      "time": 138.94040179252625,
+      "config": "p0_tcg",
+      "description": "P0 TCG",
+      "seed": 2004
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 5.0,
+        "R@5": 5.0,
+        "R@10": 50.0
+      },
+      "time": 143.54484105110168,
+      "config": "p3_logit",
+      "description": "P3 Logit",
+      "seed": 3001
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 10.0,
+        "R@5": 30.0,
+        "R@10": 50.0
+      },
+      "time": 140.74933409690857,
+      "config": "p3_logit",
+      "description": "P3 Logit",
+      "seed": 3002
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 0.0,
+        "R@5": 25.0,
+        "R@10": 60.0
+      },
+      "time": 143.97127413749695,
+      "config": "p3_logit",
+      "description": "P3 Logit",
+      "seed": 3003
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 0.0,
+        "R@5": 10.0,
+        "R@10": 40.0
+      },
+      "time": 148.77945518493652,
+      "config": "p3_logit",
+      "description": "P3 Logit",
+      "seed": 3004
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 15.0,
+        "R@5": 60.0,
+        "R@10": 85.0
+      },
+      "time": 130.88981699943542,
+      "config": "p0p3",
+      "description": "P0+P3",
+      "seed": 4001
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 15.0,
+        "R@5": 65.0,
+        "R@10": 90.0
+      },
+      "time": 125.33315920829773,
+      "config": "p0p3",
+      "description": "P0+P3",
+      "seed": 4002
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 30.0,
+        "R@5": 80.0,
+        "R@10": 85.0
+      },
+      "time": 118.60706090927124,
+      "config": "p0p3",
+      "description": "P0+P3",
+      "seed": 4003
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 15.0,
+        "R@5": 60.0,
+        "R@10": 90.0
+      },
+      "time": 123.67594695091248,
+      "config": "p0p3",
+      "description": "P0+P3",
+      "seed": 4004
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 10.0,
+        "R@5": 60.0,
+        "R@10": 100.0
+      },
+      "time": 118.92237210273743,
+      "config": "full",
+      "description": "Full",
+      "seed": 5001
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 10.0,
+        "R@5": 60.0,
+        "R@10": 95.0
+      },
+      "time": 120.00510692596436,
+      "config": "full",
+      "description": "Full",
+      "seed": 5002
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 25.0,
+        "R@5": 90.0,
+        "R@10": 100.0
+      },
+      "time": 121.3295066356659,
+      "config": "full",
+      "description": "Full",
+      "seed": 5003
+    },
+    {
+      "success": true,
+      "metrics": {
+        "R@1": 15.0,
+        "R@5": 60.0,
+        "R@10": 100.0
+      },
+      "time": 137.25390315055847,
+      "config": "full",
+      "description": "Full",
+      "seed": 5004
+    }
+  ]
+}
